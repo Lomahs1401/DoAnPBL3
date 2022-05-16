@@ -30,27 +30,37 @@ namespace DoAnPBL3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuaNV));
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblNameNV = new System.Windows.Forms.Label();
-            this.lblBD = new System.Windows.Forms.Label();
-            this.lblGender = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblSDT = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblCMND = new System.Windows.Forms.Label();
             this.rjbtnOK = new DoAnPBL3.RJButton();
-            this.cbGenderNV = new DoAnPBL3.RJComboBox();
-            this.tbNameNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbBDNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbCMNDNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbAddressNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbSDTNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbEmailNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.btnDeleteImg = new DoAnPBL3.RJButton();
+            this.rjbtnCancel = new DoAnPBL3.RJButton();
+            this.avatar = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.msgValidateAddress = new System.Windows.Forms.Label();
+            this.msgValidateIDCard = new System.Windows.Forms.Label();
+            this.msgValidatePhone = new System.Windows.Forms.Label();
+            this.msgValidateGender = new System.Windows.Forms.Label();
+            this.msgValidateDateOfBirth = new System.Windows.Forms.Label();
+            this.msgValidateEmail = new System.Windows.Forms.Label();
+            this.msgValidateName = new System.Windows.Forms.Label();
             this.btnNVImg = new DoAnPBL3.RJButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tbEmailNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbSDTNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbAddressNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbCMNDNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbBD = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbNameNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbGenderNV = new DoAnPBL3.RJComboBox();
+            this.lblCMND = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblSDT = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblBD = new System.Windows.Forms.Label();
+            this.lblNameNV = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -59,7 +69,7 @@ namespace DoAnPBL3
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitleBar
@@ -98,91 +108,6 @@ namespace DoAnPBL3
             this.label1.TabIndex = 1;
             this.label1.Text = "Sửa thông tin nhân viên";
             // 
-            // lblNameNV
-            // 
-            this.lblNameNV.AutoSize = true;
-            this.lblNameNV.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameNV.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblNameNV.Location = new System.Drawing.Point(287, 44);
-            this.lblNameNV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNameNV.Name = "lblNameNV";
-            this.lblNameNV.Size = new System.Drawing.Size(76, 18);
-            this.lblNameNV.TabIndex = 1;
-            this.lblNameNV.Text = "Họ và tên";
-            // 
-            // lblBD
-            // 
-            this.lblBD.AutoSize = true;
-            this.lblBD.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBD.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblBD.Location = new System.Drawing.Point(287, 106);
-            this.lblBD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBD.Name = "lblBD";
-            this.lblBD.Size = new System.Drawing.Size(77, 18);
-            this.lblBD.TabIndex = 2;
-            this.lblBD.Text = "Ngày sinh";
-            // 
-            // lblGender
-            // 
-            this.lblGender.AutoSize = true;
-            this.lblGender.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblGender.Location = new System.Drawing.Point(287, 168);
-            this.lblGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(70, 18);
-            this.lblGender.TabIndex = 3;
-            this.lblGender.Text = "Giới tính";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblAddress.Location = new System.Drawing.Point(287, 296);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(56, 18);
-            this.lblAddress.TabIndex = 4;
-            this.lblAddress.Text = "Địa chỉ";
-            // 
-            // lblSDT
-            // 
-            this.lblSDT.AutoSize = true;
-            this.lblSDT.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSDT.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSDT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblSDT.Location = new System.Drawing.Point(287, 363);
-            this.lblSDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(80, 18);
-            this.lblSDT.TabIndex = 5;
-            this.lblSDT.Text = "Điện thoại";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblEmail.Location = new System.Drawing.Point(287, 430);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 18);
-            this.lblEmail.TabIndex = 6;
-            this.lblEmail.Text = "Email";
-            // 
-            // lblCMND
-            // 
-            this.lblCMND.AutoSize = true;
-            this.lblCMND.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCMND.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblCMND.Location = new System.Drawing.Point(287, 231);
-            this.lblCMND.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCMND.Name = "lblCMND";
-            this.lblCMND.Size = new System.Drawing.Size(54, 18);
-            this.lblCMND.TabIndex = 5;
-            this.lblCMND.Text = "CMND";
-            // 
             // rjbtnOK
             // 
             this.rjbtnOK.BackColor = System.Drawing.Color.SeaGreen;
@@ -194,152 +119,195 @@ namespace DoAnPBL3
             this.rjbtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjbtnOK.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjbtnOK.ForeColor = System.Drawing.Color.White;
-            this.rjbtnOK.Location = new System.Drawing.Point(341, 565);
+            this.rjbtnOK.Location = new System.Drawing.Point(240, 569);
             this.rjbtnOK.Margin = new System.Windows.Forms.Padding(2);
             this.rjbtnOK.Name = "rjbtnOK";
             this.rjbtnOK.Size = new System.Drawing.Size(145, 36);
             this.rjbtnOK.TabIndex = 13;
-            this.rjbtnOK.Text = "OK";
+            this.rjbtnOK.Text = "Lưu";
             this.rjbtnOK.TextColor = System.Drawing.Color.White;
             this.rjbtnOK.UseVisualStyleBackColor = false;
+            this.rjbtnOK.Click += new System.EventHandler(this.rjbtnOK_Click);
             // 
-            // cbGenderNV
+            // panelContainer
             // 
-            this.cbGenderNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.cbGenderNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.cbGenderNV.BorderSize = 2;
-            this.cbGenderNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbGenderNV.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbGenderNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.cbGenderNV.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cbGenderNV.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Giới tính thứ 3"});
-            this.cbGenderNV.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.cbGenderNV.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.cbGenderNV.Location = new System.Drawing.Point(376, 163);
-            this.cbGenderNV.MinimumSize = new System.Drawing.Size(188, 29);
-            this.cbGenderNV.Name = "cbGenderNV";
-            this.cbGenderNV.Padding = new System.Windows.Forms.Padding(2);
-            this.cbGenderNV.Size = new System.Drawing.Size(409, 32);
-            this.cbGenderNV.TabIndex = 15;
-            this.cbGenderNV.Texts = "Giới tính";
+            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(65)))));
+            this.panelContainer.Controls.Add(this.btnDeleteImg);
+            this.panelContainer.Controls.Add(this.rjbtnCancel);
+            this.panelContainer.Controls.Add(this.avatar);
+            this.panelContainer.Controls.Add(this.msgValidateAddress);
+            this.panelContainer.Controls.Add(this.msgValidateIDCard);
+            this.panelContainer.Controls.Add(this.msgValidatePhone);
+            this.panelContainer.Controls.Add(this.msgValidateGender);
+            this.panelContainer.Controls.Add(this.msgValidateDateOfBirth);
+            this.panelContainer.Controls.Add(this.msgValidateEmail);
+            this.panelContainer.Controls.Add(this.msgValidateName);
+            this.panelContainer.Controls.Add(this.btnNVImg);
+            this.panelContainer.Controls.Add(this.tbEmailNV);
+            this.panelContainer.Controls.Add(this.tbSDTNV);
+            this.panelContainer.Controls.Add(this.tbAddressNV);
+            this.panelContainer.Controls.Add(this.tbCMNDNV);
+            this.panelContainer.Controls.Add(this.tbBD);
+            this.panelContainer.Controls.Add(this.tbNameNV);
+            this.panelContainer.Controls.Add(this.cbGenderNV);
+            this.panelContainer.Controls.Add(this.lblCMND);
+            this.panelContainer.Controls.Add(this.lblEmail);
+            this.panelContainer.Controls.Add(this.lblSDT);
+            this.panelContainer.Controls.Add(this.lblAddress);
+            this.panelContainer.Controls.Add(this.lblGender);
+            this.panelContainer.Controls.Add(this.lblBD);
+            this.panelContainer.Controls.Add(this.lblNameNV);
+            this.panelContainer.Controls.Add(this.rjbtnOK);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panelContainer.Location = new System.Drawing.Point(0, 41);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(2);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(812, 645);
+            this.panelContainer.TabIndex = 4;
             // 
-            // tbNameNV
+            // btnDeleteImg
             // 
-            this.tbNameNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbNameNV.BorderRadius = 6;
-            this.tbNameNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbNameNV.DefaultText = "";
-            this.tbNameNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbNameNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbNameNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbNameNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbNameNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbNameNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbNameNV.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.tbNameNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbNameNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbNameNV.Location = new System.Drawing.Point(376, 39);
-            this.tbNameNV.Name = "tbNameNV";
-            this.tbNameNV.PasswordChar = '\0';
-            this.tbNameNV.PlaceholderText = "Họ và tên";
-            this.tbNameNV.SelectedText = "";
-            this.tbNameNV.Size = new System.Drawing.Size(409, 30);
-            this.tbNameNV.TabIndex = 16;
+            this.btnDeleteImg.BackColor = System.Drawing.Color.Crimson;
+            this.btnDeleteImg.BackgroundColor = System.Drawing.Color.Crimson;
+            this.btnDeleteImg.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDeleteImg.BorderRadius = 20;
+            this.btnDeleteImg.BorderSize = 0;
+            this.btnDeleteImg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteImg.FlatAppearance.BorderSize = 0;
+            this.btnDeleteImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteImg.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteImg.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteImg.Image = global::DoAnPBL3.Properties.Resources.delete_30px;
+            this.btnDeleteImg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeleteImg.Location = new System.Drawing.Point(143, 313);
+            this.btnDeleteImg.Name = "btnDeleteImg";
+            this.btnDeleteImg.Size = new System.Drawing.Size(110, 40);
+            this.btnDeleteImg.TabIndex = 76;
+            this.btnDeleteImg.Text = "Xóa ảnh";
+            this.btnDeleteImg.TextColor = System.Drawing.Color.White;
+            this.btnDeleteImg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDeleteImg.UseVisualStyleBackColor = false;
+            this.btnDeleteImg.Click += new System.EventHandler(this.btnDeleteImg_Click);
             // 
-            // tbBDNV
+            // rjbtnCancel
             // 
-            this.tbBDNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbBDNV.BorderRadius = 6;
-            this.tbBDNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbBDNV.DefaultText = "";
-            this.tbBDNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbBDNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbBDNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbBDNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbBDNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbBDNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbBDNV.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.tbBDNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbBDNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbBDNV.Location = new System.Drawing.Point(376, 101);
-            this.tbBDNV.Name = "tbBDNV";
-            this.tbBDNV.PasswordChar = '\0';
-            this.tbBDNV.PlaceholderText = "Ngày sinh";
-            this.tbBDNV.SelectedText = "";
-            this.tbBDNV.Size = new System.Drawing.Size(409, 30);
-            this.tbBDNV.TabIndex = 17;
+            this.rjbtnCancel.BackColor = System.Drawing.Color.DimGray;
+            this.rjbtnCancel.BackgroundColor = System.Drawing.Color.DimGray;
+            this.rjbtnCancel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjbtnCancel.BorderRadius = 15;
+            this.rjbtnCancel.BorderSize = 0;
+            this.rjbtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rjbtnCancel.FlatAppearance.BorderSize = 0;
+            this.rjbtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjbtnCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjbtnCancel.ForeColor = System.Drawing.Color.White;
+            this.rjbtnCancel.Location = new System.Drawing.Point(444, 569);
+            this.rjbtnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.rjbtnCancel.Name = "rjbtnCancel";
+            this.rjbtnCancel.Size = new System.Drawing.Size(145, 36);
+            this.rjbtnCancel.TabIndex = 75;
+            this.rjbtnCancel.Text = "Hủy";
+            this.rjbtnCancel.TextColor = System.Drawing.Color.White;
+            this.rjbtnCancel.UseVisualStyleBackColor = false;
+            this.rjbtnCancel.Click += new System.EventHandler(this.rjbtnCancel_Click);
             // 
-            // tbCMNDNV
+            // avatar
             // 
-            this.tbCMNDNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbCMNDNV.BorderRadius = 6;
-            this.tbCMNDNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbCMNDNV.DefaultText = "";
-            this.tbCMNDNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbCMNDNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbCMNDNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbCMNDNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbCMNDNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbCMNDNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbCMNDNV.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.tbCMNDNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbCMNDNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbCMNDNV.Location = new System.Drawing.Point(376, 225);
-            this.tbCMNDNV.Name = "tbCMNDNV";
-            this.tbCMNDNV.PasswordChar = '\0';
-            this.tbCMNDNV.PlaceholderText = "CMND";
-            this.tbCMNDNV.SelectedText = "";
-            this.tbCMNDNV.Size = new System.Drawing.Size(409, 30);
-            this.tbCMNDNV.TabIndex = 18;
+            this.avatar.ImageRotate = 0F;
+            this.avatar.Location = new System.Drawing.Point(11, 42);
+            this.avatar.Name = "avatar";
+            this.avatar.Size = new System.Drawing.Size(242, 240);
+            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.avatar.TabIndex = 74;
+            this.avatar.TabStop = false;
             // 
-            // tbAddressNV
+            // msgValidateAddress
             // 
-            this.tbAddressNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbAddressNV.BorderRadius = 6;
-            this.tbAddressNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAddressNV.DefaultText = "";
-            this.tbAddressNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbAddressNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbAddressNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbAddressNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbAddressNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbAddressNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbAddressNV.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.tbAddressNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbAddressNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbAddressNV.Location = new System.Drawing.Point(376, 293);
-            this.tbAddressNV.Name = "tbAddressNV";
-            this.tbAddressNV.PasswordChar = '\0';
-            this.tbAddressNV.PlaceholderText = "Địa chỉ";
-            this.tbAddressNV.SelectedText = "";
-            this.tbAddressNV.Size = new System.Drawing.Size(409, 30);
-            this.tbAddressNV.TabIndex = 19;
+            this.msgValidateAddress.AutoSize = true;
+            this.msgValidateAddress.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgValidateAddress.Location = new System.Drawing.Point(386, 491);
+            this.msgValidateAddress.Name = "msgValidateAddress";
+            this.msgValidateAddress.Size = new System.Drawing.Size(0, 16);
+            this.msgValidateAddress.TabIndex = 73;
             // 
-            // tbSDTNV
+            // msgValidateIDCard
             // 
-            this.tbSDTNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbSDTNV.BorderRadius = 6;
-            this.tbSDTNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbSDTNV.DefaultText = "";
-            this.tbSDTNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbSDTNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbSDTNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbSDTNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbSDTNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.tbSDTNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbSDTNV.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.tbSDTNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.tbSDTNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbSDTNV.Location = new System.Drawing.Point(376, 359);
-            this.tbSDTNV.Name = "tbSDTNV";
-            this.tbSDTNV.PasswordChar = '\0';
-            this.tbSDTNV.PlaceholderText = "Số điện thoại";
-            this.tbSDTNV.SelectedText = "";
-            this.tbSDTNV.Size = new System.Drawing.Size(409, 30);
-            this.tbSDTNV.TabIndex = 20;
+            this.msgValidateIDCard.AutoSize = true;
+            this.msgValidateIDCard.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgValidateIDCard.Location = new System.Drawing.Point(386, 423);
+            this.msgValidateIDCard.Name = "msgValidateIDCard";
+            this.msgValidateIDCard.Size = new System.Drawing.Size(0, 16);
+            this.msgValidateIDCard.TabIndex = 72;
+            // 
+            // msgValidatePhone
+            // 
+            this.msgValidatePhone.AutoSize = true;
+            this.msgValidatePhone.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgValidatePhone.Location = new System.Drawing.Point(386, 351);
+            this.msgValidatePhone.Name = "msgValidatePhone";
+            this.msgValidatePhone.Size = new System.Drawing.Size(0, 16);
+            this.msgValidatePhone.TabIndex = 71;
+            // 
+            // msgValidateGender
+            // 
+            this.msgValidateGender.AutoSize = true;
+            this.msgValidateGender.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgValidateGender.Location = new System.Drawing.Point(386, 283);
+            this.msgValidateGender.Name = "msgValidateGender";
+            this.msgValidateGender.Size = new System.Drawing.Size(0, 16);
+            this.msgValidateGender.TabIndex = 70;
+            // 
+            // msgValidateDateOfBirth
+            // 
+            this.msgValidateDateOfBirth.AutoSize = true;
+            this.msgValidateDateOfBirth.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgValidateDateOfBirth.Location = new System.Drawing.Point(386, 209);
+            this.msgValidateDateOfBirth.Name = "msgValidateDateOfBirth";
+            this.msgValidateDateOfBirth.Size = new System.Drawing.Size(0, 16);
+            this.msgValidateDateOfBirth.TabIndex = 69;
+            // 
+            // msgValidateEmail
+            // 
+            this.msgValidateEmail.AutoSize = true;
+            this.msgValidateEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgValidateEmail.Location = new System.Drawing.Point(386, 139);
+            this.msgValidateEmail.Name = "msgValidateEmail";
+            this.msgValidateEmail.Size = new System.Drawing.Size(0, 16);
+            this.msgValidateEmail.TabIndex = 68;
+            // 
+            // msgValidateName
+            // 
+            this.msgValidateName.AutoSize = true;
+            this.msgValidateName.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgValidateName.Location = new System.Drawing.Point(386, 70);
+            this.msgValidateName.Name = "msgValidateName";
+            this.msgValidateName.Size = new System.Drawing.Size(0, 16);
+            this.msgValidateName.TabIndex = 67;
+            // 
+            // btnNVImg
+            // 
+            this.btnNVImg.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnNVImg.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.btnNVImg.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnNVImg.BorderRadius = 20;
+            this.btnNVImg.BorderSize = 0;
+            this.btnNVImg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNVImg.FlatAppearance.BorderSize = 0;
+            this.btnNVImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNVImg.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNVImg.ForeColor = System.Drawing.Color.White;
+            this.btnNVImg.Image = global::DoAnPBL3.Properties.Resources.icons8_picture_30px;
+            this.btnNVImg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNVImg.Location = new System.Drawing.Point(10, 313);
+            this.btnNVImg.Name = "btnNVImg";
+            this.btnNVImg.Size = new System.Drawing.Size(110, 40);
+            this.btnNVImg.TabIndex = 66;
+            this.btnNVImg.Text = "Chọn ảnh";
+            this.btnNVImg.TextColor = System.Drawing.Color.White;
+            this.btnNVImg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNVImg.UseVisualStyleBackColor = false;
+            this.btnNVImg.Click += new System.EventHandler(this.btnNVImg_Click);
             // 
             // tbEmailNV
             // 
@@ -356,79 +324,240 @@ namespace DoAnPBL3
             this.tbEmailNV.Font = new System.Drawing.Font("Arial", 11.25F);
             this.tbEmailNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
             this.tbEmailNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbEmailNV.Location = new System.Drawing.Point(376, 425);
+            this.tbEmailNV.Location = new System.Drawing.Point(377, 106);
             this.tbEmailNV.Name = "tbEmailNV";
             this.tbEmailNV.PasswordChar = '\0';
-            this.tbEmailNV.PlaceholderText = "Email";
+            this.tbEmailNV.PlaceholderText = "Nhập email";
             this.tbEmailNV.SelectedText = "";
             this.tbEmailNV.Size = new System.Drawing.Size(409, 30);
-            this.tbEmailNV.TabIndex = 21;
+            this.tbEmailNV.TabIndex = 54;
             // 
-            // panelContainer
+            // tbSDTNV
             // 
-            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(65)))));
-            this.panelContainer.Controls.Add(this.btnNVImg);
-            this.panelContainer.Controls.Add(this.guna2PictureBox1);
-            this.panelContainer.Controls.Add(this.tbEmailNV);
-            this.panelContainer.Controls.Add(this.tbSDTNV);
-            this.panelContainer.Controls.Add(this.tbAddressNV);
-            this.panelContainer.Controls.Add(this.tbCMNDNV);
-            this.panelContainer.Controls.Add(this.tbBDNV);
-            this.panelContainer.Controls.Add(this.tbNameNV);
-            this.panelContainer.Controls.Add(this.cbGenderNV);
-            this.panelContainer.Controls.Add(this.rjbtnOK);
-            this.panelContainer.Controls.Add(this.lblCMND);
-            this.panelContainer.Controls.Add(this.lblEmail);
-            this.panelContainer.Controls.Add(this.lblSDT);
-            this.panelContainer.Controls.Add(this.lblAddress);
-            this.panelContainer.Controls.Add(this.lblGender);
-            this.panelContainer.Controls.Add(this.lblBD);
-            this.panelContainer.Controls.Add(this.lblNameNV);
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panelContainer.Location = new System.Drawing.Point(0, 41);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(2);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(812, 645);
-            this.panelContainer.TabIndex = 4;
+            this.tbSDTNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbSDTNV.BorderRadius = 6;
+            this.tbSDTNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbSDTNV.DefaultText = "";
+            this.tbSDTNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbSDTNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbSDTNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbSDTNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbSDTNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbSDTNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbSDTNV.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.tbSDTNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbSDTNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbSDTNV.Location = new System.Drawing.Point(377, 318);
+            this.tbSDTNV.Name = "tbSDTNV";
+            this.tbSDTNV.PasswordChar = '\0';
+            this.tbSDTNV.PlaceholderText = "Nhập số điện thoại";
+            this.tbSDTNV.SelectedText = "";
+            this.tbSDTNV.Size = new System.Drawing.Size(409, 30);
+            this.tbSDTNV.TabIndex = 62;
             // 
-            // btnNVImg
+            // tbAddressNV
             // 
-            this.btnNVImg.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnNVImg.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.btnNVImg.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnNVImg.BorderRadius = 20;
-            this.btnNVImg.BorderSize = 0;
-            this.btnNVImg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNVImg.FlatAppearance.BorderSize = 0;
-            this.btnNVImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNVImg.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNVImg.ForeColor = System.Drawing.Color.White;
-            this.btnNVImg.Image = global::DoAnPBL3.Properties.Resources.icons8_picture_30px;
-            this.btnNVImg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNVImg.Location = new System.Drawing.Point(55, 287);
-            this.btnNVImg.Name = "btnNVImg";
-            this.btnNVImg.Size = new System.Drawing.Size(150, 40);
-            this.btnNVImg.TabIndex = 50;
-            this.btnNVImg.Text = "Đổi ảnh";
-            this.btnNVImg.TextColor = System.Drawing.Color.White;
-            this.btnNVImg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNVImg.UseVisualStyleBackColor = false;
+            this.tbAddressNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbAddressNV.BorderRadius = 6;
+            this.tbAddressNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbAddressNV.DefaultText = "";
+            this.tbAddressNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbAddressNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbAddressNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbAddressNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbAddressNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbAddressNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbAddressNV.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.tbAddressNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbAddressNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbAddressNV.Location = new System.Drawing.Point(377, 458);
+            this.tbAddressNV.Name = "tbAddressNV";
+            this.tbAddressNV.PasswordChar = '\0';
+            this.tbAddressNV.PlaceholderText = "Nhập địa chỉ";
+            this.tbAddressNV.SelectedText = "";
+            this.tbAddressNV.Size = new System.Drawing.Size(409, 30);
+            this.tbAddressNV.TabIndex = 65;
             // 
-            // guna2PictureBox1
+            // tbCMNDNV
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 39);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(242, 233);
-            this.guna2PictureBox1.TabIndex = 49;
-            this.guna2PictureBox1.TabStop = false;
+            this.tbCMNDNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbCMNDNV.BorderRadius = 6;
+            this.tbCMNDNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbCMNDNV.DefaultText = "";
+            this.tbCMNDNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbCMNDNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbCMNDNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbCMNDNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbCMNDNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbCMNDNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbCMNDNV.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.tbCMNDNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbCMNDNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbCMNDNV.Location = new System.Drawing.Point(377, 390);
+            this.tbCMNDNV.Name = "tbCMNDNV";
+            this.tbCMNDNV.PasswordChar = '\0';
+            this.tbCMNDNV.PlaceholderText = "Nhập CMND";
+            this.tbCMNDNV.SelectedText = "";
+            this.tbCMNDNV.Size = new System.Drawing.Size(409, 30);
+            this.tbCMNDNV.TabIndex = 64;
+            // 
+            // tbBD
+            // 
+            this.tbBD.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbBD.BorderRadius = 6;
+            this.tbBD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbBD.DefaultText = "";
+            this.tbBD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbBD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbBD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbBD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbBD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbBD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbBD.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.tbBD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbBD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbBD.Location = new System.Drawing.Point(377, 176);
+            this.tbBD.Name = "tbBD";
+            this.tbBD.PasswordChar = '\0';
+            this.tbBD.PlaceholderText = "Nhập ngày sinh";
+            this.tbBD.SelectedText = "";
+            this.tbBD.Size = new System.Drawing.Size(409, 30);
+            this.tbBD.TabIndex = 57;
+            // 
+            // tbNameNV
+            // 
+            this.tbNameNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbNameNV.BorderRadius = 6;
+            this.tbNameNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbNameNV.DefaultText = "";
+            this.tbNameNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbNameNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbNameNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbNameNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbNameNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbNameNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbNameNV.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.tbNameNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbNameNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbNameNV.Location = new System.Drawing.Point(377, 37);
+            this.tbNameNV.Name = "tbNameNV";
+            this.tbNameNV.PasswordChar = '\0';
+            this.tbNameNV.PlaceholderText = "Nhập họ và tên";
+            this.tbNameNV.SelectedText = "";
+            this.tbNameNV.Size = new System.Drawing.Size(409, 30);
+            this.tbNameNV.TabIndex = 53;
+            // 
+            // cbGenderNV
+            // 
+            this.cbGenderNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.cbGenderNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.cbGenderNV.BorderSize = 2;
+            this.cbGenderNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbGenderNV.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGenderNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.cbGenderNV.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cbGenderNV.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Giới tính thứ 3"});
+            this.cbGenderNV.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.cbGenderNV.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.cbGenderNV.Location = new System.Drawing.Point(377, 248);
+            this.cbGenderNV.MinimumSize = new System.Drawing.Size(188, 29);
+            this.cbGenderNV.Name = "cbGenderNV";
+            this.cbGenderNV.Padding = new System.Windows.Forms.Padding(2);
+            this.cbGenderNV.Size = new System.Drawing.Size(409, 32);
+            this.cbGenderNV.TabIndex = 59;
+            this.cbGenderNV.Texts = "Giới tính";
+            // 
+            // lblCMND
+            // 
+            this.lblCMND.AutoSize = true;
+            this.lblCMND.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCMND.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblCMND.Location = new System.Drawing.Point(287, 396);
+            this.lblCMND.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCMND.Name = "lblCMND";
+            this.lblCMND.Size = new System.Drawing.Size(54, 18);
+            this.lblCMND.TabIndex = 61;
+            this.lblCMND.Text = "CMND";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblEmail.Location = new System.Drawing.Point(287, 111);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(46, 18);
+            this.lblEmail.TabIndex = 63;
+            this.lblEmail.Text = "Email";
+            // 
+            // lblSDT
+            // 
+            this.lblSDT.AutoSize = true;
+            this.lblSDT.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSDT.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSDT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblSDT.Location = new System.Drawing.Point(287, 322);
+            this.lblSDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(80, 18);
+            this.lblSDT.TabIndex = 60;
+            this.lblSDT.Text = "Điện thoại";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblAddress.Location = new System.Drawing.Point(287, 461);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(56, 18);
+            this.lblAddress.TabIndex = 58;
+            this.lblAddress.Text = "Địa chỉ";
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblGender.Location = new System.Drawing.Point(287, 253);
+            this.lblGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(70, 18);
+            this.lblGender.TabIndex = 56;
+            this.lblGender.Text = "Giới tính";
+            // 
+            // lblBD
+            // 
+            this.lblBD.AutoSize = true;
+            this.lblBD.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBD.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblBD.Location = new System.Drawing.Point(287, 181);
+            this.lblBD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBD.Name = "lblBD";
+            this.lblBD.Size = new System.Drawing.Size(77, 18);
+            this.lblBD.TabIndex = 55;
+            this.lblBD.Text = "Ngày sinh";
+            // 
+            // lblNameNV
+            // 
+            this.lblNameNV.AutoSize = true;
+            this.lblNameNV.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameNV.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblNameNV.Location = new System.Drawing.Point(287, 42);
+            this.lblNameNV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNameNV.Name = "lblNameNV";
+            this.lblNameNV.Size = new System.Drawing.Size(76, 18);
+            this.lblNameNV.TabIndex = 52;
+            this.lblNameNV.Text = "Họ và tên";
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 10;
-            this.guna2Elipse1.TargetControl = this.cbGenderNV;
             // 
             // guna2DragControl1
             // 
@@ -461,14 +590,17 @@ namespace DoAnPBL3
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelTitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSuaNV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSuaNV";
+            this.Load += new System.EventHandler(this.FormSuaNV_Load);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,28 +610,37 @@ namespace DoAnPBL3
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblNameNV;
-        private System.Windows.Forms.Label lblBD;
-        private System.Windows.Forms.Label lblGender;
-        private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.Label lblSDT;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblCMND;
         private RJButton rjbtnOK;
-        private RJComboBox cbGenderNV;
-        private Guna.UI2.WinForms.Guna2TextBox tbNameNV;
-        private Guna.UI2.WinForms.Guna2TextBox tbBDNV;
-        private Guna.UI2.WinForms.Guna2TextBox tbCMNDNV;
-        private Guna.UI2.WinForms.Guna2TextBox tbAddressNV;
-        private Guna.UI2.WinForms.Guna2TextBox tbSDTNV;
-        private Guna.UI2.WinForms.Guna2TextBox tbEmailNV;
         private System.Windows.Forms.Panel panelContainer;
-        private RJButton btnNVImg;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
+        private Guna.UI2.WinForms.Guna2PictureBox avatar;
+        private System.Windows.Forms.Label msgValidateAddress;
+        private System.Windows.Forms.Label msgValidateIDCard;
+        private System.Windows.Forms.Label msgValidatePhone;
+        private System.Windows.Forms.Label msgValidateGender;
+        private System.Windows.Forms.Label msgValidateDateOfBirth;
+        private System.Windows.Forms.Label msgValidateEmail;
+        private System.Windows.Forms.Label msgValidateName;
+        private RJButton btnNVImg;
+        private Guna.UI2.WinForms.Guna2TextBox tbEmailNV;
+        private Guna.UI2.WinForms.Guna2TextBox tbSDTNV;
+        private Guna.UI2.WinForms.Guna2TextBox tbAddressNV;
+        private Guna.UI2.WinForms.Guna2TextBox tbCMNDNV;
+        private Guna.UI2.WinForms.Guna2TextBox tbBD;
+        private Guna.UI2.WinForms.Guna2TextBox tbNameNV;
+        private RJComboBox cbGenderNV;
+        private System.Windows.Forms.Label lblCMND;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblBD;
+        private System.Windows.Forms.Label lblNameNV;
+        private RJButton rjbtnCancel;
+        private RJButton btnDeleteImg;
     }
 }

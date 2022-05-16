@@ -9,7 +9,6 @@ using System.Windows.Forms;
 namespace DoAnPBL3
 {
     public class MenuColorTable : ProfessionalColorTable
-
     {
         //Fields
         private Color backColor;
@@ -17,9 +16,7 @@ namespace DoAnPBL3
         private Color borderColor;
         private Color menuItemBorderColor;
         private Color menuItemSelectedColor;
-
         //Constructor
-
         public MenuColorTable(bool isMainMenu, Color primaryColor)
         {
             if (isMainMenu)
@@ -29,9 +26,7 @@ namespace DoAnPBL3
                 borderColor = Color.FromArgb(32, 33, 51);
                 menuItemBorderColor = primaryColor;
                 menuItemSelectedColor = primaryColor;
-
             }
-
             else
             {
                 backColor = Color.White;
@@ -41,10 +36,7 @@ namespace DoAnPBL3
                 menuItemSelectedColor = primaryColor;
             }
         }
-
-
         // Override
-
         public override Color ToolStripDropDownBackground => backColor;
 
         public override Color MenuBorder => borderColor;
@@ -58,6 +50,5 @@ namespace DoAnPBL3
         public override Color ImageMarginGradientMiddle => leftColumnColor;
 
         public override Color ImageMarginGradientEnd => leftColumnColor;
-
     }
 }

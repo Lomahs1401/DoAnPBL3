@@ -259,6 +259,7 @@ namespace DoAnPBL3
             // btnAdmin
             // 
             this.btnAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdmin.AutoSize = true;
             this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdmin.FlatAppearance.BorderSize = 0;

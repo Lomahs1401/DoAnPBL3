@@ -23,6 +23,11 @@ namespace DoAnPBL3.Models
         [Required]
         public string ID_Book { get; set; }
 
+        [Column("Ten_Sach")]
+        [StringLength(100)]
+        [Required]
+        public string NameBook { get; set; }
+
         [Column("donGia")]
         [Required]
         public int UnitPrice { get; set; }

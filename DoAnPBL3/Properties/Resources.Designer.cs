@@ -253,6 +253,16 @@ namespace DoAnPBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete_30px {
+            get {
+                object obj = ResourceManager.GetObject("delete_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap division {
             get {
                 object obj = ResourceManager.GetObject("division", resourceCulture);
@@ -716,6 +726,26 @@ namespace DoAnPBL3.Properties {
         internal static System.Drawing.Bitmap question {
             get {
                 object obj = ResourceManager.GetObject("question", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_image_30px {
+            get {
+                object obj = ResourceManager.GetObject("remove_image_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_image_40px {
+            get {
+                object obj = ResourceManager.GetObject("remove_image_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

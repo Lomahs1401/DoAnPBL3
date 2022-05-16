@@ -32,6 +32,10 @@ namespace DoAnPBL3.Models
         [Required]
         public DateTime PublishDate { get; set; }
 
+        [Column("soLuong")]
+        [Required]
+        public int Quantity { get; set; }
+
         [Column("giaTien")]
         [Required]
         public int Price { get; set; }

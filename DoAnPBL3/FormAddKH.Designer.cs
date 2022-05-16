@@ -1,5 +1,4 @@
-﻿
-namespace DoAnPBL3
+﻿namespace DoAnPBL3
 {
     partial class FormAddKH
     {

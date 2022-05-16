@@ -22,6 +22,7 @@ namespace DoAnPBL3.Models
         [Required]
         public string NameAdmin { get; set; }
 
+        [Column("email")]
         [StringLength(255)]
         [Required]
         public string Email { get; set; }
@@ -50,6 +51,7 @@ namespace DoAnPBL3.Models
         [Required]
         public string Address { get; set; }
 
+        [Column("anh")]
         public byte[] Avatar { get; set; }
 
         [Column("taiKhoanDangNhap")]

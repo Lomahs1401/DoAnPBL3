@@ -26,11 +26,7 @@ namespace DoAnPBL3.Models
         [Column("hoVaTen")]
         [StringLength(255)]
         [Required]
-        public string NameAdmin { get; set; }
-
-        [StringLength(255)]
-        [Required]
-        public string Email { get; set; }
+        public string NameCustomer { get; set; }
 
         [Column("gioiTinh")]
         [StringLength(20)]
@@ -46,13 +42,6 @@ namespace DoAnPBL3.Models
         [StringLength(255)]
         [Required]
         public string Address { get; set; }
-
-        [Column("taiKhoanDangNhap")]
-        [StringLength(255)]
-        public string UserName { get; set; }
-
-        [ForeignKey("UserName")]
-        public virtual Account Account { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
     }

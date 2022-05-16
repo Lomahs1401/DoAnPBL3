@@ -1,9 +1,12 @@
-﻿using FontAwesome.Sharp;
+﻿using DoAnPBL3.Models;
+using DoAnPBL3.Validator;
+using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +20,7 @@ namespace DoAnPBL3
         public FormQLNV(string theme)
         {
             InitializeComponent();
-            switch(theme)
+            switch (theme)
             {
                 case "Admin":
                     btnAddNV.Parent.BackColor = Color.FromArgb(34, 33, 74);
@@ -40,7 +43,7 @@ namespace DoAnPBL3
                     break;
 
                 case "Dark":
-                    btnAddNV.Parent.BackColor = Color.FromArgb(32,32,32);
+                    btnAddNV.Parent.BackColor = Color.FromArgb(32, 32, 32);
                     label2.ForeColor = Color.FromArgb(124, 141, 181);
                     label5.ForeColor = Color.FromArgb(124, 141, 181);
                     label7.ForeColor = Color.FromArgb(124, 141, 181);
@@ -52,8 +55,8 @@ namespace DoAnPBL3
                     xuiSegmentNV.SegmentColor = Color.DarkMagenta;
                     xuiSegmentNV.SegmentInactiveTextColor = Color.White;
                     btnTKNV.FillColor = Color.FromArgb(107, 83, 255);
-                    rjtbTKNV.BackColor = Color.FromArgb(18,18,18);
-                    rjtbTKNV.BorderColor = Color.FromArgb(18,18,18);
+                    rjtbTKNV.BackColor = Color.FromArgb(18, 18, 18);
+                    rjtbTKNV.BorderColor = Color.FromArgb(18, 18, 18);
                     rjtbTKNV.ForeColor = Color.Silver;
                     rjtbTKNV.PlaceholderColor = Color.FromArgb(87, 83, 103);
                     break;
@@ -71,15 +74,14 @@ namespace DoAnPBL3
                     xuiSegmentNV.SegmentColor = Color.DarkMagenta;
                     xuiSegmentNV.SegmentInactiveTextColor = Color.White;
                     btnTKNV.FillColor = Color.FromArgb(107, 83, 255);
-                    rjtbTKNV.BackColor = Color.FromArgb(255,255,255);
-                    rjtbTKNV.BorderColor = Color.FromArgb(180,180,180);
+                    rjtbTKNV.BackColor = Color.FromArgb(255, 255, 255);
+                    rjtbTKNV.BorderColor = Color.FromArgb(180, 180, 180);
                     rjtbTKNV.ForeColor = Color.DimGray;
                     rjtbTKNV.PlaceholderColor = Color.FromArgb(87, 83, 103);
 
                     break;
             }
         }
-
 
         private void DisableButton()
         {
@@ -110,7 +112,6 @@ namespace DoAnPBL3
             }
         }
 
-
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
@@ -120,6 +121,13 @@ namespace DoAnPBL3
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
         }
+
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
+
         private void btnAddNV_MouseEnter(object sender, EventArgs e)
         {
             btnAddNV.BackColor = RGBColors.color4;
@@ -170,26 +178,115 @@ namespace DoAnPBL3
             new FormAddNV().Show();
         }
 
-        private void btnDeleteNV_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSuaNV_Click(object sender, EventArgs e)
         {
+            string ID_Employee = dgvQLNV.CurrentRow.Cells["ID"].Value.ToString();
+            new FormSuaNV(ID_Employee).Show();
+        }
+        private void btnDeleteNV_Click(object sender, EventArgs e)
+        {
+            string ID_Employee = dgvQLNV.CurrentRow.Cells["ID"].Value.ToString();
+            string name = dgvQLNV.CurrentRow.Cells["Name"].Value.ToString();
+            DialogResult result = RJMessageBox.Show("Xác nhận xóa nhân viên " + name + "?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                using (BookStoreContext context = new BookStoreContext())
+                {
+                    Employee employee = context.Employees.Find(ID_Employee);
+                    context.Employees.Remove(employee);
+                    context.SaveChanges();
+                }
+                FormQLNV_Load(sender, e);
+                Alert("Xóa nhân viên thành công", Form_Alert.enmType.Success);
+            }
+            else
+                return;
+        }
 
+        private void dgvQLNV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string ID_Employee = dgvQLNV.CurrentRow.Cells["ID"].Value.ToString();
+            new FormTTNV(ID_Employee).Show();
+        }
+
+        private void FormQLNV_Load(object sender, EventArgs e)
+        {
+            using (BookStoreContext context = new BookStoreContext())
+            {
+                var listEmployees = context.Employees
+                                    .Select(employee => new
+                                    {
+                                        employee.ID_Employee,
+                                        employee.NameEmployee,
+                                        employee.Gender,
+                                        employee.Email,
+                                        employee.Phone
+                                    });
+                var listMaleEmployees = context.Employees
+                                        .Where(employee => employee.Gender == "Nam")
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        });
+                var listFemaleEmployees = context.Employees
+                                        .Where(employee => employee.Gender == "Nữ")
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        });
+                dgvQLNV.DataSource = listEmployees.ToList();
+                lblTSNV.Text = listEmployees.ToList().Count().ToString();
+                lblSNVNam.Text = listMaleEmployees.ToList().Count().ToString();
+                lblSNVNu.Text = listFemaleEmployees.ToList().Count().ToString();
+            }
         }
 
         private void btnTKNV_Click(object sender, EventArgs e)
         {
-            if (rjtbTKNV.Texts == "")
+            using (BookStoreContext context = new BookStoreContext())
             {
-                xuiSegmentNV.SelectedIndex = 0;
-            }
-            else
-            {
-                RJMessageBox.Show(rjtbTKNV.Texts, "Success", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                xuiSegmentNV.SelectedIndex = 0;
+                if (EmployeeValidator.IsValidPhoneNumber(rjtbTKNV.Texts, EmployeeValidator.PHONE_REGEX))
+                {
+                    var listEmployees = context.Employees
+                                        .Where(employee => employee.Phone == rjtbTKNV.Texts)
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        });
+                    if (listEmployees.ToList().Count == 0)
+                        RJMessageBox.Show("Không tìm thấy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                        dgvQLNV.DataSource = listEmployees.ToList();
+                }
+                else
+                {
+                    var listEmployees = context.Employees
+                                        .Where(employee => employee.NameEmployee.Contains(rjtbTKNV.Texts))
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        });
+                    if (listEmployees.ToList().Count == 0)
+                        RJMessageBox.Show("Không tìm thấy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                        dgvQLNV.DataSource = listEmployees.ToList();
+                }
             }
         }
 
@@ -199,10 +296,55 @@ namespace DoAnPBL3
             {
                 btnTKNV.PerformClick();
                 e.Handled = true;
-
             }
         }
 
-        
+        private void xuiSegmentNV_Click(object sender, EventArgs e)
+        {
+            using (BookStoreContext context = new BookStoreContext())
+            {
+                // Tất cả
+                if (xuiSegmentNV.SelectedIndex == 0)
+                {
+                    dgvQLNV.DataSource = context.Employees
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        }).ToList();
+                }
+                // Nam
+                else if (xuiSegmentNV.SelectedIndex == 1)
+                {
+                    dgvQLNV.DataSource = context.Employees
+                                        .Where(employee => employee.Gender == "Nam")
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        }).ToList();
+                }
+                // Nữ
+                else
+                {
+                    dgvQLNV.DataSource = context.Employees
+                                        .Where(employee => employee.Gender == "Nữ")
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        }).ToList();
+                }
+            }
+        }
     }
 }

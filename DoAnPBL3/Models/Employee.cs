@@ -17,44 +17,60 @@ namespace DoAnPBL3.Models
             Orders = new HashSet<Order>();
         }
 
+        public Employee(string id, string name, string email, DateTime dateOfBirth, string gender, string phone, string ID_Card, string address, byte[] avatar, string username)
+        {
+            ID_Employee = id;
+            NameEmployee = name;
+            Email = email;
+            DateOfBirth = dateOfBirth;
+            Gender = gender;
+            Phone = phone;
+            Id_Card = ID_Card;
+            Address = address;
+            Avatar = avatar;
+            UserName = username;
+        }
+
         [Key]
         [Column("ID_NhanVien")]
         [StringLength(100)]
-        [Required]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public string ID_Employee { get; set; }
 
         [Column("hoVaTen")]
         [StringLength(255)]
-        [Required]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public string NameEmployee { get; set; }
 
-        [Required]
+        [Column("email")]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public string Email { get; set; }
 
         [Column("ngaySinh")]
-        [Required]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public DateTime DateOfBirth { get; set; }
 
         [Column("gioiTinh")]
         [StringLength(20)]
-        [Required]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public string Gender { get; set; }
 
         [Column("SDT")]
         [StringLength(20)]
-        [Required]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public string Phone { get; set; }
 
         [Column("CMND")]
         [StringLength(50)]
-        [Required]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public string Id_Card { get; set; }
 
         [Column("diaChi")]
         [StringLength(255)]
-        [Required]
+        [Required(ErrorMessage = "Trường này không được để trống")]
         public string Address { get; set; }
 
+        [Column("anh")]
         public byte[] Avatar { get; set; }
 
         [Column("taiKhoanDangNhap")]

@@ -30,17 +30,19 @@ namespace DoAnPBL3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTTNV));
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.avatar = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tbGender = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbEmailNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbSDTNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbAddressNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbCMNDNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbBD = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbNameNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbGenderNV = new DoAnPBL3.RJComboBox();
-            this.rjbtnCancel = new DoAnPBL3.RJButton();
             this.lblCMND = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSDT = new System.Windows.Forms.Label();
@@ -51,14 +53,13 @@ namespace DoAnPBL3
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.rjbtnOK = new DoAnPBL3.RJButton();
             this.panelTitleBar.SuspendLayout();
-            this.panelContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitleBar
@@ -72,6 +73,18 @@ namespace DoAnPBL3
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(812, 41);
             this.panelTitleBar.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = global::DoAnPBL3.Properties.Resources.user_info;
+            this.pictureBox1.Location = new System.Drawing.Point(173, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -88,15 +101,15 @@ namespace DoAnPBL3
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(65)))));
-            this.panelContainer.Controls.Add(this.guna2PictureBox1);
+            this.panelContainer.Controls.Add(this.avatar);
+            this.panelContainer.Controls.Add(this.tbGender);
             this.panelContainer.Controls.Add(this.tbEmailNV);
             this.panelContainer.Controls.Add(this.tbSDTNV);
             this.panelContainer.Controls.Add(this.tbAddressNV);
             this.panelContainer.Controls.Add(this.tbCMNDNV);
             this.panelContainer.Controls.Add(this.tbBD);
             this.panelContainer.Controls.Add(this.tbNameNV);
-            this.panelContainer.Controls.Add(this.cbGenderNV);
-            this.panelContainer.Controls.Add(this.rjbtnCancel);
+            this.panelContainer.Controls.Add(this.rjbtnOK);
             this.panelContainer.Controls.Add(this.lblCMND);
             this.panelContainer.Controls.Add(this.lblEmail);
             this.panelContainer.Controls.Add(this.lblSDT);
@@ -111,6 +124,40 @@ namespace DoAnPBL3
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(812, 645);
             this.panelContainer.TabIndex = 3;
+            // 
+            // avatar
+            // 
+            this.avatar.ImageRotate = 0F;
+            this.avatar.Location = new System.Drawing.Point(11, 50);
+            this.avatar.Name = "avatar";
+            this.avatar.Size = new System.Drawing.Size(242, 240);
+            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.avatar.TabIndex = 52;
+            this.avatar.TabStop = false;
+            // 
+            // tbGender
+            // 
+            this.tbGender.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbGender.BorderRadius = 6;
+            this.tbGender.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbGender.DefaultText = "";
+            this.tbGender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbGender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbGender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbGender.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbGender.Enabled = false;
+            this.tbGender.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
+            this.tbGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbGender.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.tbGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.tbGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbGender.Location = new System.Drawing.Point(378, 172);
+            this.tbGender.Name = "tbGender";
+            this.tbGender.PasswordChar = '\0';
+            this.tbGender.PlaceholderText = "Ngày sinh";
+            this.tbGender.SelectedText = "";
+            this.tbGender.Size = new System.Drawing.Size(409, 30);
+            this.tbGender.TabIndex = 47;
             // 
             // tbEmailNV
             // 
@@ -256,50 +303,6 @@ namespace DoAnPBL3
             this.tbNameNV.Size = new System.Drawing.Size(409, 30);
             this.tbNameNV.TabIndex = 16;
             // 
-            // cbGenderNV
-            // 
-            this.cbGenderNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.cbGenderNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.cbGenderNV.BorderSize = 2;
-            this.cbGenderNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbGenderNV.Enabled = false;
-            this.cbGenderNV.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbGenderNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.cbGenderNV.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cbGenderNV.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Giới tính thứ 3"});
-            this.cbGenderNV.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(27)))), ((int)(((byte)(57)))));
-            this.cbGenderNV.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.cbGenderNV.Location = new System.Drawing.Point(378, 172);
-            this.cbGenderNV.MinimumSize = new System.Drawing.Size(188, 29);
-            this.cbGenderNV.Name = "cbGenderNV";
-            this.cbGenderNV.Padding = new System.Windows.Forms.Padding(2);
-            this.cbGenderNV.Size = new System.Drawing.Size(409, 32);
-            this.cbGenderNV.TabIndex = 15;
-            this.cbGenderNV.Texts = "Giới tính";
-            // 
-            // rjbtnCancel
-            // 
-            this.rjbtnCancel.BackColor = System.Drawing.Color.DimGray;
-            this.rjbtnCancel.BackgroundColor = System.Drawing.Color.DimGray;
-            this.rjbtnCancel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjbtnCancel.BorderRadius = 15;
-            this.rjbtnCancel.BorderSize = 0;
-            this.rjbtnCancel.FlatAppearance.BorderSize = 0;
-            this.rjbtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjbtnCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjbtnCancel.ForeColor = System.Drawing.Color.White;
-            this.rjbtnCancel.Location = new System.Drawing.Point(342, 574);
-            this.rjbtnCancel.Margin = new System.Windows.Forms.Padding(2);
-            this.rjbtnCancel.Name = "rjbtnCancel";
-            this.rjbtnCancel.Size = new System.Drawing.Size(145, 36);
-            this.rjbtnCancel.TabIndex = 14;
-            this.rjbtnCancel.Text = "Hủy";
-            this.rjbtnCancel.TextColor = System.Drawing.Color.White;
-            this.rjbtnCancel.UseVisualStyleBackColor = false;
-            // 
             // lblCMND
             // 
             this.lblCMND.AutoSize = true;
@@ -388,7 +391,6 @@ namespace DoAnPBL3
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 10;
-            this.guna2Elipse1.TargetControl = this.cbGenderNV;
             // 
             // guna2Elipse2
             // 
@@ -400,28 +402,6 @@ namespace DoAnPBL3
             this.guna2ShadowForm1.BorderRadius = 10;
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2ShadowForm1.TargetForm = this;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(10, 51);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(242, 233);
-            this.guna2PictureBox1.TabIndex = 46;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::DoAnPBL3.Properties.Resources.user_info;
-            this.pictureBox1.Location = new System.Drawing.Point(173, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // guna2DragControl1
             // 
@@ -435,6 +415,27 @@ namespace DoAnPBL3
             this.guna2DragControl2.TargetControl = this.panelTitleBar;
             this.guna2DragControl2.UseTransparentDrag = true;
             // 
+            // rjbtnOK
+            // 
+            this.rjbtnOK.BackColor = System.Drawing.Color.SeaGreen;
+            this.rjbtnOK.BackgroundColor = System.Drawing.Color.SeaGreen;
+            this.rjbtnOK.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjbtnOK.BorderRadius = 15;
+            this.rjbtnOK.BorderSize = 0;
+            this.rjbtnOK.FlatAppearance.BorderSize = 0;
+            this.rjbtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjbtnOK.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjbtnOK.ForeColor = System.Drawing.Color.White;
+            this.rjbtnOK.Location = new System.Drawing.Point(342, 574);
+            this.rjbtnOK.Margin = new System.Windows.Forms.Padding(2);
+            this.rjbtnOK.Name = "rjbtnOK";
+            this.rjbtnOK.Size = new System.Drawing.Size(145, 36);
+            this.rjbtnOK.TabIndex = 14;
+            this.rjbtnOK.Text = "OK";
+            this.rjbtnOK.TextColor = System.Drawing.Color.White;
+            this.rjbtnOK.UseVisualStyleBackColor = false;
+            this.rjbtnOK.Click += new System.EventHandler(this.rjbtnCancel_Click);
+            // 
             // FormTTNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,14 +444,17 @@ namespace DoAnPBL3
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelTitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTTNV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTTNV";
+            this.Load += new System.EventHandler(this.FormTTNV_Load);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -461,7 +465,6 @@ namespace DoAnPBL3
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelContainer;
-        private RJComboBox cbGenderNV;
         private System.Windows.Forms.Label lblCMND;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblSDT;
@@ -476,11 +479,12 @@ namespace DoAnPBL3
         private Guna.UI2.WinForms.Guna2TextBox tbAddressNV;
         private Guna.UI2.WinForms.Guna2TextBox tbEmailNV;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private RJButton rjbtnCancel;
+        private RJButton rjbtnOK;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private Guna.UI2.WinForms.Guna2TextBox tbGender;
+        private Guna.UI2.WinForms.Guna2PictureBox avatar;
     }
 }

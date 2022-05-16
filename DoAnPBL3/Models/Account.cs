@@ -45,9 +45,5 @@ namespace DoAnPBL3.Models
         [StringLength(255)]
         [Required]
         public string Role { get; set; }
-
-        //public virtual Admin AdminAccounts { get; set; }
-        //public virtual Employee EmployeeAccounts { get; set; }
-        //public virtual Customer CustomerAccounts { get; set; }
     }
 }

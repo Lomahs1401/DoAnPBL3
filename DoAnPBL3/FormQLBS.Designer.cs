@@ -1,5 +1,4 @@
-﻿
-namespace DoAnPBL3
+﻿namespace DoAnPBL3
 {
     partial class FormQLBS
     {
@@ -30,22 +29,12 @@ namespace DoAnPBL3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLBS));
             this.dgvQLBS = new System.Windows.Forms.DataGridView();
             this.xuiSegmentBS = new XanderUI.XUISegment();
-            this.rjtbTKS = new DoAnPBL3.RJTextBox();
-            this.rjDropDownMenuSXS = new DoAnPBL3.RJDropDownMenu(this.components);
-            this.chữCáiGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chữCáiTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.giáMuaSáchTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.giáMuaSáchGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mứcĐộBánChạyTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblSTA = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lblSTV = new System.Windows.Forms.Label();
@@ -61,11 +50,23 @@ namespace DoAnPBL3
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rjtbTKS = new DoAnPBL3.RJTextBox();
+            this.rjDropDownMenuSXS = new DoAnPBL3.RJDropDownMenu(this.components);
+            this.chữCáiGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chữCáiTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.giáMuaSáchTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.giáMuaSáchGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mứcĐộBánChạyTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLBS)).BeginInit();
-            this.rjDropDownMenuSXS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.rjDropDownMenuSXS.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvQLBS
@@ -75,32 +76,34 @@ namespace DoAnPBL3
             this.dgvQLBS.AllowUserToOrderColumns = true;
             this.dgvQLBS.AllowUserToResizeColumns = false;
             this.dgvQLBS.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
-            this.dgvQLBS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvQLBS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
+            this.dgvQLBS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvQLBS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvQLBS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvQLBS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.dgvQLBS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvQLBS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvQLBS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQLBS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvQLBS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvQLBS.ColumnHeadersHeight = 22;
             this.dgvQLBS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvQLBS.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvQLBS.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvQLBS.EnableHeadersVisualStyles = false;
             this.dgvQLBS.Location = new System.Drawing.Point(6, 170);
             this.dgvQLBS.Name = "dgvQLBS";
@@ -113,7 +116,7 @@ namespace DoAnPBL3
             // 
             // xuiSegmentBS
             // 
-            this.xuiSegmentBS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.xuiSegmentBS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.xuiSegmentBS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.xuiSegmentBS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xuiSegmentBS.Items = "Tất cả, Tiếng Việt, Tiếng Anh";
@@ -127,114 +130,6 @@ namespace DoAnPBL3
             this.xuiSegmentBS.SelectedIndex = 0;
             this.xuiSegmentBS.Size = new System.Drawing.Size(314, 34);
             this.xuiSegmentBS.TabIndex = 21;
-            // 
-            // rjtbTKS
-            // 
-            this.rjtbTKS.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjtbTKS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
-            this.rjtbTKS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
-            this.rjtbTKS.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.rjtbTKS.BorderRadius = 15;
-            this.rjtbTKS.BorderSize = 1;
-            this.rjtbTKS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjtbTKS.ForeColor = System.Drawing.Color.Silver;
-            this.rjtbTKS.Location = new System.Drawing.Point(6, 133);
-            this.rjtbTKS.Margin = new System.Windows.Forms.Padding(4);
-            this.rjtbTKS.Multiline = false;
-            this.rjtbTKS.Name = "rjtbTKS";
-            this.rjtbTKS.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjtbTKS.PasswordChar = false;
-            this.rjtbTKS.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(83)))), ((int)(((byte)(103)))));
-            this.rjtbTKS.PlaceholderText = "Tìm kiếm";
-            this.rjtbTKS.Size = new System.Drawing.Size(250, 31);
-            this.rjtbTKS.TabIndex = 16;
-            this.rjtbTKS.Texts = "";
-            this.rjtbTKS.UnderlinedStyle = false;
-            // 
-            // rjDropDownMenuSXS
-            // 
-            this.rjDropDownMenuSXS.BackColor = System.Drawing.Color.Silver;
-            this.rjDropDownMenuSXS.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjDropDownMenuSXS.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.rjDropDownMenuSXS.IsMainMenu = false;
-            this.rjDropDownMenuSXS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chữCáiGiảmDầnToolStripMenuItem,
-            this.chữCáiTăngDầnToolStripMenuItem,
-            this.giáMuaSáchTăngDầnToolStripMenuItem,
-            this.giáMuaSáchGiảmDầnToolStripMenuItem,
-            this.mứcĐộBánChạyTăngDầnToolStripMenuItem,
-            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem,
-            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem,
-            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem});
-            this.rjDropDownMenuSXS.MenuItemHeight = 25;
-            this.rjDropDownMenuSXS.MenuItemTextColor = System.Drawing.Color.DarkSlateBlue;
-            this.rjDropDownMenuSXS.Name = "rjDropDownMenu1";
-            this.rjDropDownMenuSXS.PrimaryColor = System.Drawing.Color.DarkSlateBlue;
-            this.rjDropDownMenuSXS.Size = new System.Drawing.Size(258, 180);
-            // 
-            // chữCáiGiảmDầnToolStripMenuItem
-            // 
-            this.chữCáiGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.chữCáiGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.chữCáiGiảmDầnToolStripMenuItem.Name = "chữCáiGiảmDầnToolStripMenuItem";
-            this.chữCáiGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.chữCáiGiảmDầnToolStripMenuItem.Text = "Chữ cái giảm dần";
-            // 
-            // chữCáiTăngDầnToolStripMenuItem
-            // 
-            this.chữCáiTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.chữCáiTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.chữCáiTăngDầnToolStripMenuItem.Name = "chữCáiTăngDầnToolStripMenuItem";
-            this.chữCáiTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.chữCáiTăngDầnToolStripMenuItem.Text = "Chữ cái tăng dần";
-            // 
-            // giáMuaSáchTăngDầnToolStripMenuItem
-            // 
-            this.giáMuaSáchTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.giáMuaSáchTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.giáMuaSáchTăngDầnToolStripMenuItem.Name = "giáMuaSáchTăngDầnToolStripMenuItem";
-            this.giáMuaSáchTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.giáMuaSáchTăngDầnToolStripMenuItem.Text = "Giá mua sách tăng dần";
-            // 
-            // giáMuaSáchGiảmDầnToolStripMenuItem
-            // 
-            this.giáMuaSáchGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.giáMuaSáchGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.giáMuaSáchGiảmDầnToolStripMenuItem.Name = "giáMuaSáchGiảmDầnToolStripMenuItem";
-            this.giáMuaSáchGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.giáMuaSáchGiảmDầnToolStripMenuItem.Text = "Giá mua sách giảm dần";
-            // 
-            // mứcĐộBánChạyTăngDầnToolStripMenuItem
-            // 
-            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.Name = "mứcĐộBánChạyTăngDầnToolStripMenuItem";
-            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.Text = "Mức độ bán chạy tăng dần";
-            // 
-            // mứcĐộBánChạyGiảmDầnToolStripMenuItem
-            // 
-            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.Name = "mứcĐộBánChạyGiảmDầnToolStripMenuItem";
-            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.Text = "Mức độ bán chạy giảm dần";
-            // 
-            // sốLượngSáchHiệnCóTăngDầnToolStripMenuItem
-            // 
-            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.Name = "sốLượngSáchHiệnCóTăngDầnToolStripMenuItem";
-            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.Text = "Số lượng sách hiện có tăng dần";
-            // 
-            // sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem
-            // 
-            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
-            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.Name = "sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem";
-            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
-            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.Text = "Số lượng sách hiện có giảm dần";
             // 
             // lblSTA
             // 
@@ -346,7 +241,6 @@ namespace DoAnPBL3
             // 
             // btnTKS
             // 
-            this.btnTKS.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnTKS.BorderRadius = 15;
             this.btnTKS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTKS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -376,7 +270,7 @@ namespace DoAnPBL3
             this.btnHDTN.IconColor = System.Drawing.Color.White;
             this.btnHDTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHDTN.IconSize = 30;
-            this.btnHDTN.Location = new System.Drawing.Point(833, 244);
+            this.btnHDTN.Location = new System.Drawing.Point(0, 67);
             this.btnHDTN.Name = "btnHDTN";
             this.btnHDTN.Size = new System.Drawing.Size(142, 47);
             this.btnHDTN.TabIndex = 13;
@@ -400,7 +294,7 @@ namespace DoAnPBL3
             this.btnSXS.IconColor = System.Drawing.Color.White;
             this.btnSXS.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSXS.IconSize = 30;
-            this.btnSXS.Location = new System.Drawing.Point(834, 171);
+            this.btnSXS.Location = new System.Drawing.Point(-1, 3);
             this.btnSXS.Name = "btnSXS";
             this.btnSXS.Size = new System.Drawing.Size(142, 47);
             this.btnSXS.TabIndex = 12;
@@ -427,12 +321,130 @@ namespace DoAnPBL3
             this.guna2Elipse3.BorderRadius = 5;
             this.guna2Elipse3.TargetControl = this.btnHDTN;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnSXS);
+            this.panel1.Controls.Add(this.btnHDTN);
+            this.panel1.Location = new System.Drawing.Point(833, 170);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(143, 118);
+            this.panel1.TabIndex = 39;
+            // 
+            // rjtbTKS
+            // 
+            this.rjtbTKS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
+            this.rjtbTKS.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
+            this.rjtbTKS.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.rjtbTKS.BorderRadius = 15;
+            this.rjtbTKS.BorderSize = 1;
+            this.rjtbTKS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjtbTKS.ForeColor = System.Drawing.Color.Silver;
+            this.rjtbTKS.Location = new System.Drawing.Point(6, 133);
+            this.rjtbTKS.Margin = new System.Windows.Forms.Padding(4);
+            this.rjtbTKS.Multiline = false;
+            this.rjtbTKS.Name = "rjtbTKS";
+            this.rjtbTKS.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjtbTKS.PasswordChar = false;
+            this.rjtbTKS.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(83)))), ((int)(((byte)(103)))));
+            this.rjtbTKS.PlaceholderText = "Tìm kiếm";
+            this.rjtbTKS.Size = new System.Drawing.Size(250, 31);
+            this.rjtbTKS.TabIndex = 16;
+            this.rjtbTKS.Texts = "";
+            this.rjtbTKS.UnderlinedStyle = false;
+            // 
+            // rjDropDownMenuSXS
+            // 
+            this.rjDropDownMenuSXS.BackColor = System.Drawing.Color.Silver;
+            this.rjDropDownMenuSXS.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjDropDownMenuSXS.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.rjDropDownMenuSXS.IsMainMenu = false;
+            this.rjDropDownMenuSXS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chữCáiGiảmDầnToolStripMenuItem,
+            this.chữCáiTăngDầnToolStripMenuItem,
+            this.giáMuaSáchTăngDầnToolStripMenuItem,
+            this.giáMuaSáchGiảmDầnToolStripMenuItem,
+            this.mứcĐộBánChạyTăngDầnToolStripMenuItem,
+            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem,
+            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem,
+            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem});
+            this.rjDropDownMenuSXS.MenuItemHeight = 25;
+            this.rjDropDownMenuSXS.MenuItemTextColor = System.Drawing.Color.DarkSlateBlue;
+            this.rjDropDownMenuSXS.Name = "rjDropDownMenu1";
+            this.rjDropDownMenuSXS.PrimaryColor = System.Drawing.Color.DarkSlateBlue;
+            this.rjDropDownMenuSXS.Size = new System.Drawing.Size(258, 180);
+            // 
+            // chữCáiGiảmDầnToolStripMenuItem
+            // 
+            this.chữCáiGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.chữCáiGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.chữCáiGiảmDầnToolStripMenuItem.Name = "chữCáiGiảmDầnToolStripMenuItem";
+            this.chữCáiGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.chữCáiGiảmDầnToolStripMenuItem.Text = "Chữ cái giảm dần";
+            // 
+            // chữCáiTăngDầnToolStripMenuItem
+            // 
+            this.chữCáiTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.chữCáiTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.chữCáiTăngDầnToolStripMenuItem.Name = "chữCáiTăngDầnToolStripMenuItem";
+            this.chữCáiTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.chữCáiTăngDầnToolStripMenuItem.Text = "Chữ cái tăng dần";
+            // 
+            // giáMuaSáchTăngDầnToolStripMenuItem
+            // 
+            this.giáMuaSáchTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.giáMuaSáchTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.giáMuaSáchTăngDầnToolStripMenuItem.Name = "giáMuaSáchTăngDầnToolStripMenuItem";
+            this.giáMuaSáchTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.giáMuaSáchTăngDầnToolStripMenuItem.Text = "Giá mua sách tăng dần";
+            // 
+            // giáMuaSáchGiảmDầnToolStripMenuItem
+            // 
+            this.giáMuaSáchGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.giáMuaSáchGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.giáMuaSáchGiảmDầnToolStripMenuItem.Name = "giáMuaSáchGiảmDầnToolStripMenuItem";
+            this.giáMuaSáchGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.giáMuaSáchGiảmDầnToolStripMenuItem.Text = "Giá mua sách giảm dần";
+            // 
+            // mứcĐộBánChạyTăngDầnToolStripMenuItem
+            // 
+            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.Name = "mứcĐộBánChạyTăngDầnToolStripMenuItem";
+            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.mứcĐộBánChạyTăngDầnToolStripMenuItem.Text = "Mức độ bán chạy tăng dần";
+            // 
+            // mứcĐộBánChạyGiảmDầnToolStripMenuItem
+            // 
+            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.Name = "mứcĐộBánChạyGiảmDầnToolStripMenuItem";
+            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.mứcĐộBánChạyGiảmDầnToolStripMenuItem.Text = "Mức độ bán chạy giảm dần";
+            // 
+            // sốLượngSáchHiệnCóTăngDầnToolStripMenuItem
+            // 
+            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.Name = "sốLượngSáchHiệnCóTăngDầnToolStripMenuItem";
+            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.sốLượngSáchHiệnCóTăngDầnToolStripMenuItem.Text = "Số lượng sách hiện có tăng dần";
+            // 
+            // sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem
+            // 
+            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.BackColor = System.Drawing.Color.MediumPurple;
+            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.Name = "sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem";
+            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
+            this.sốLượngSáchHiệnCóGiảmDầnToolStripMenuItem.Text = "Số lượng sách hiện có giảm dần";
+            // 
             // FormQLBS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(980, 585);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
@@ -446,8 +458,6 @@ namespace DoAnPBL3
             this.Controls.Add(this.xuiSegmentBS);
             this.Controls.Add(this.rjtbTKS);
             this.Controls.Add(this.dgvQLBS);
-            this.Controls.Add(this.btnHDTN);
-            this.Controls.Add(this.btnSXS);
             this.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Gainsboro;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -455,10 +465,11 @@ namespace DoAnPBL3
             this.Text = "Quản lý bán sách";
             this.Load += new System.EventHandler(this.FormQLBS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLBS)).EndInit();
-            this.rjDropDownMenuSXS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.rjDropDownMenuSXS.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,5 +503,6 @@ namespace DoAnPBL3
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private System.Windows.Forms.Panel panel1;
     }
 }

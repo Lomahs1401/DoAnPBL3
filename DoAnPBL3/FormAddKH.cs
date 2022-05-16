@@ -14,26 +14,18 @@ namespace DoAnPBL3
 {
     public partial class FormAddKH : Form
     {
-        
+
         //Constructor
         public FormAddKH()
         {
             InitializeComponent();
-            
+
         }
-
-        
-
         public void Alert(string msg, Form_Alert.enmType type)
         {
             Form_Alert frm = new Form_Alert();
             frm.showAlert(msg, type);
         }
-
-
-        
-        
-
         private void rjbtnOK_Click(object sender, EventArgs e)
         {
             if (tbNameKH.Text == "" || tbCMNDKH.Text == "" || tbBDKH.Text == "" || tbAddressKH.Text == "" || tbSDTKH.Text == "")
@@ -46,12 +38,9 @@ namespace DoAnPBL3
                 this.Close();
             }
         }
-
         private void rjbtnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        
     }
 }

@@ -30,6 +30,7 @@ namespace DoAnPBL3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panelDesktop = new Guna.UI2.WinForms.Guna2Panel();
@@ -40,22 +41,22 @@ namespace DoAnPBL3
             this.label1 = new System.Windows.Forms.Label();
             this.cbSaveAcc = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Hide = new System.Windows.Forms.PictureBox();
+            this.Show = new System.Windows.Forms.PictureBox();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Hide = new System.Windows.Forms.PictureBox();
-            this.Show = new System.Windows.Forms.PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelDesktop.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Show)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +101,7 @@ namespace DoAnPBL3
             this.linkLabelForgotPassword.Location = new System.Drawing.Point(186, 340);
             this.linkLabelForgotPassword.Name = "linkLabelForgotPassword";
             this.linkLabelForgotPassword.Size = new System.Drawing.Size(95, 15);
-            this.linkLabelForgotPassword.TabIndex = 15;
+            this.linkLabelForgotPassword.TabIndex = 4;
             this.linkLabelForgotPassword.TabStop = true;
             this.linkLabelForgotPassword.Text = "Quên Mật Khẩu?";
             this.linkLabelForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelForgotPassword_LinkClicked);
@@ -159,7 +160,7 @@ namespace DoAnPBL3
             this.label1.Location = new System.Drawing.Point(74, 340);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 15);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Lưu Đăng Nhập";
             // 
             // cbSaveAcc
@@ -180,7 +181,6 @@ namespace DoAnPBL3
             this.cbSaveAcc.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.cbSaveAcc.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.cbSaveAcc.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.cbSaveAcc.CheckedChanged += new System.EventHandler(this.cbSaveAcc_CheckedChanged);
             // 
             // txtUserName
             // 
@@ -205,6 +205,45 @@ namespace DoAnPBL3
             this.txtUserName.Size = new System.Drawing.Size(251, 36);
             this.txtUserName.TabIndex = 1;
             this.txtUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUserName_KeyPress);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::DoAnPBL3.Properties.Resources.Logo_Project_AM_2;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(92, 61);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(143, 130);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // Hide
+            // 
+            this.Hide.BackColor = System.Drawing.Color.Transparent;
+            this.Hide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Hide.Image = global::DoAnPBL3.Properties.Resources.icons8_hide_24px;
+            this.Hide.Location = new System.Drawing.Point(255, 287);
+            this.Hide.Name = "Hide";
+            this.Hide.Size = new System.Drawing.Size(23, 23);
+            this.Hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Hide.TabIndex = 14;
+            this.Hide.TabStop = false;
+            this.Hide.Click += new System.EventHandler(this.Show_Click);
+            // 
+            // Show
+            // 
+            this.Show.BackColor = System.Drawing.Color.Transparent;
+            this.Show.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Show.Image = global::DoAnPBL3.Properties.Resources.icons8_eye_24px;
+            this.Show.Location = new System.Drawing.Point(255, 287);
+            this.Show.Name = "Show";
+            this.Show.Size = new System.Drawing.Size(23, 23);
+            this.Show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Show.TabIndex = 13;
+            this.Show.TabStop = false;
+            this.Show.Click += new System.EventHandler(this.Hide_Click);
             // 
             // txtPassword
             // 
@@ -263,6 +302,19 @@ namespace DoAnPBL3
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox1.TabIndex = 2;
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::DoAnPBL3.Properties.Resources.Mesa_de_trabajo_1_copia_4x;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-211, -172);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(1096, 1022);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 1;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
             // guna2ShadowForm1
             // 
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
@@ -280,58 +332,6 @@ namespace DoAnPBL3
             this.guna2AnimateWindow1.Interval = 0;
             this.guna2AnimateWindow1.TargetForm = this;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::DoAnPBL3.Properties.Resources.Logo_Project_AM_2;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(92, 61);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(143, 130);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // Hide
-            // 
-            this.Hide.BackColor = System.Drawing.Color.Transparent;
-            this.Hide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Hide.Image = global::DoAnPBL3.Properties.Resources.icons8_hide_24px;
-            this.Hide.Location = new System.Drawing.Point(255, 287);
-            this.Hide.Name = "Hide";
-            this.Hide.Size = new System.Drawing.Size(23, 23);
-            this.Hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Hide.TabIndex = 14;
-            this.Hide.TabStop = false;
-            this.Hide.Click += new System.EventHandler(this.Show_Click);
-            // 
-            // Show
-            // 
-            this.Show.BackColor = System.Drawing.Color.Transparent;
-            this.Show.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Show.Image = global::DoAnPBL3.Properties.Resources.icons8_eye_24px;
-            this.Show.Location = new System.Drawing.Point(255, 287);
-            this.Show.Name = "Show";
-            this.Show.Size = new System.Drawing.Size(23, 23);
-            this.Show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Show.TabIndex = 13;
-            this.Show.TabStop = false;
-            this.Show.Click += new System.EventHandler(this.Hide_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::DoAnPBL3.Properties.Resources.Mesa_de_trabajo_1_copia_4x;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-211, -172);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(1096, 1022);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 1;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,16 +340,17 @@ namespace DoAnPBL3
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Show)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
