@@ -50,12 +50,12 @@ namespace DoAnPBL3
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.xuiClock1 = new XanderUI.XUIClock();
             this.lblAdminName = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
@@ -78,6 +78,7 @@ namespace DoAnPBL3
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -373,12 +374,12 @@ namespace DoAnPBL3
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panelDesktop.Controls.Add(this.xuiClock1);
             this.panelDesktop.Controls.Add(this.lblAdminName);
+            this.panelDesktop.Controls.Add(this.lblDate);
+            this.panelDesktop.Controls.Add(this.guna2PictureBox1);
             this.panelDesktop.Controls.Add(this.iconPictureBox6);
             this.panelDesktop.Controls.Add(this.iconPictureBox5);
             this.panelDesktop.Controls.Add(this.iconPictureBox3);
             this.panelDesktop.Controls.Add(this.iconPictureBox4);
-            this.panelDesktop.Controls.Add(this.lblDate);
-            this.panelDesktop.Controls.Add(this.label3);
             this.panelDesktop.Controls.Add(this.iconPictureBox1);
             this.panelDesktop.Controls.Add(this.label2);
             this.panelDesktop.Controls.Add(this.iconPictureBox2);
@@ -402,6 +403,7 @@ namespace DoAnPBL3
             this.xuiClock1.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             this.xuiClock1.Location = new System.Drawing.Point(847, 33);
             this.xuiClock1.Name = "xuiClock1";
+            this.xuiClock1.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.xuiClock1.ShowAmPm = false;
             this.xuiClock1.ShowHexagon = true;
             this.xuiClock1.ShowMinutesCircle = true;
@@ -423,6 +425,30 @@ namespace DoAnPBL3
             this.lblAdminName.Size = new System.Drawing.Size(57, 16);
             this.lblAdminName.TabIndex = 20;
             this.lblAdminName.Text = "Admin: ";
+            // 
+            // lblDate
+            // 
+            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(813, 5);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(37, 16);
+            this.lblDate.TabIndex = 14;
+            this.lblDate.Text = "Date";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::DoAnPBL3.Properties.Resources.logo_book_store;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(56, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(844, 422);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 22;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // iconPictureBox6
             // 
@@ -494,30 +520,6 @@ namespace DoAnPBL3
             this.iconPictureBox4.Size = new System.Drawing.Size(46, 43);
             this.iconPictureBox4.TabIndex = 16;
             this.iconPictureBox4.TabStop = false;
-            // 
-            // lblDate
-            // 
-            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(823, 5);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(37, 16);
-            this.lblDate.TabIndex = 14;
-            this.lblDate.Text = "Date";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(360, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(295, 24);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Ứng dụng quản lý bán sách ";
             // 
             // iconPictureBox1
             // 
@@ -668,6 +670,7 @@ namespace DoAnPBL3
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
@@ -700,7 +703,6 @@ namespace DoAnPBL3
         private FontAwesome.Sharp.IconPictureBox btnMinimize;
         private FontAwesome.Sharp.IconPictureBox btnMaximize;
         private FontAwesome.Sharp.IconPictureBox btnClose;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblDate;
         private RJDropDownMenu rjddmAdminSettingMenu;
         private System.Windows.Forms.ToolStripMenuItem chỉnhSửaTàiKhoảnToolStripMenuItem;
@@ -718,6 +720,7 @@ namespace DoAnPBL3
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }
 

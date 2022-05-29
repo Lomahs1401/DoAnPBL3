@@ -263,6 +263,7 @@ namespace DoAnPBL3
                         Console.WriteLine(item);
                     }
                     Alert("Thêm nhân viên mới thành công", Form_Alert.enmType.Success);
+                    
                     Close();
                 }
             }

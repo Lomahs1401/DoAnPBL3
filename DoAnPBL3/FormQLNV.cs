@@ -16,14 +16,17 @@ namespace DoAnPBL3
 {
     public partial class FormQLNV : Form
     {
+        private int count;
+        private string theme;
         private IconButton btnCurrent;
         public FormQLNV(string theme)
         {
             InitializeComponent();
+            this.theme = theme;
             switch (theme)
             {
                 case "Admin":
-                    btnAddNV.Parent.BackColor = Color.FromArgb(34, 33, 74);
+                    btnAddNV.Parent.Parent.BackColor = Color.FromArgb(34, 33, 74);
                     label2.ForeColor = Color.FromArgb(124, 141, 181);
                     label5.ForeColor = Color.FromArgb(124, 141, 181);
                     label7.ForeColor = Color.FromArgb(124, 141, 181);
@@ -43,7 +46,7 @@ namespace DoAnPBL3
                     break;
 
                 case "Dark":
-                    btnAddNV.Parent.BackColor = Color.FromArgb(32, 32, 32);
+                    btnAddNV.Parent.Parent.BackColor = Color.FromArgb(32, 32, 32);
                     label2.ForeColor = Color.FromArgb(124, 141, 181);
                     label5.ForeColor = Color.FromArgb(124, 141, 181);
                     label7.ForeColor = Color.FromArgb(124, 141, 181);
@@ -62,7 +65,7 @@ namespace DoAnPBL3
                     break;
 
                 case "Light":
-                    btnAddNV.Parent.BackColor = Color.FromArgb(220, 220, 220);
+                    btnAddNV.Parent.Parent.BackColor = Color.FromArgb(220, 220, 220);
                     label2.ForeColor = Color.FromArgb(124, 141, 181);
                     label5.ForeColor = Color.FromArgb(124, 141, 181);
                     label7.ForeColor = Color.FromArgb(124, 141, 181);
@@ -78,7 +81,7 @@ namespace DoAnPBL3
                     rjtbTKNV.BorderColor = Color.FromArgb(180, 180, 180);
                     rjtbTKNV.ForeColor = Color.DimGray;
                     rjtbTKNV.PlaceholderColor = Color.FromArgb(87, 83, 103);
-
+                    
                     break;
             }
         }
@@ -146,6 +149,7 @@ namespace DoAnPBL3
         private void btnAddNV_MouseLeave(object sender, EventArgs e)
         {
             btnAddNV.BackColor = Color.MediumSeaGreen;
+           
         }
 
         private void btnDeleteNV_MouseLeave(object sender, EventArgs e)
@@ -176,6 +180,9 @@ namespace DoAnPBL3
         private void btnAddNV_Click(object sender, EventArgs e)
         {
             new FormAddNV().Show();
+            timer1.Start();
+           
+
         }
 
         private void btnSuaNV_Click(object sender, EventArgs e)
@@ -211,6 +218,7 @@ namespace DoAnPBL3
 
         private void FormQLNV_Load(object sender, EventArgs e)
         {
+           
             using (BookStoreContext context = new BookStoreContext())
             {
                 var listEmployees = context.Employees
@@ -242,11 +250,15 @@ namespace DoAnPBL3
                                             employee.Email,
                                             employee.Phone
                                         });
+                count = listEmployees.ToList().Count();
                 dgvQLNV.DataSource = listEmployees.ToList();
                 lblTSNV.Text = listEmployees.ToList().Count().ToString();
                 lblSNVNam.Text = listMaleEmployees.ToList().Count().ToString();
                 lblSNVNu.Text = listFemaleEmployees.ToList().Count().ToString();
+
             }
+
+
         }
 
         private void btnTKNV_Click(object sender, EventArgs e)
@@ -345,6 +357,53 @@ namespace DoAnPBL3
                                         }).ToList();
                 }
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            using (BookStoreContext context = new BookStoreContext())
+            {
+                var listEmployees = context.Employees
+                                    .Select(employee => new
+                                    {
+                                        employee.ID_Employee,
+                                        employee.NameEmployee,
+                                        employee.Gender,
+                                        employee.Email,
+                                        employee.Phone
+                                    });
+                var listMaleEmployees = context.Employees
+                                        .Where(employee => employee.Gender == "Nam")
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        });
+                var listFemaleEmployees = context.Employees
+                                        .Where(employee => employee.Gender == "Nữ")
+                                        .Select(employee => new
+                                        {
+                                            employee.ID_Employee,
+                                            employee.NameEmployee,
+                                            employee.Gender,
+                                            employee.Email,
+                                            employee.Phone
+                                        });
+                if (listEmployees.ToList().Count() != count)
+                {
+                    dgvQLNV.DataSource = listEmployees.ToList();
+                    lblTSNV.Text = listEmployees.ToList().Count().ToString();
+                    lblSNVNam.Text = listMaleEmployees.ToList().Count().ToString();
+                    lblSNVNu.Text = listFemaleEmployees.ToList().Count().ToString();
+                    count = listEmployees.ToList().Count();
+                    
+                }
+            }
+            
+            
         }
     }
 }

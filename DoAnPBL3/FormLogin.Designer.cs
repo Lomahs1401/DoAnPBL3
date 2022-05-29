@@ -301,6 +301,7 @@ namespace DoAnPBL3
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox1.TabIndex = 2;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // guna2PictureBox2
             // 
@@ -330,7 +331,6 @@ namespace DoAnPBL3
             // 
             this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND;
             this.guna2AnimateWindow1.Interval = 0;
-            this.guna2AnimateWindow1.TargetForm = this;
             // 
             // FormLogin
             // 

@@ -59,6 +59,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblTSNV = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DataSetListEmployees)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -391,7 +395,7 @@
             this.lblSNVNu.BackColor = System.Drawing.Color.Transparent;
             this.lblSNVNu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSNVNu.ForeColor = System.Drawing.Color.White;
-            this.lblSNVNu.Location = new System.Drawing.Point(817, 49);
+            this.lblSNVNu.Location = new System.Drawing.Point(819, 49);
             this.lblSNVNu.Name = "lblSNVNu";
             this.lblSNVNu.Size = new System.Drawing.Size(29, 16);
             this.lblSNVNu.TabIndex = 43;
@@ -417,7 +421,7 @@
             this.lblSNVNam.BackColor = System.Drawing.Color.Transparent;
             this.lblSNVNam.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSNVNam.ForeColor = System.Drawing.Color.White;
-            this.lblSNVNam.Location = new System.Drawing.Point(460, 49);
+            this.lblSNVNam.Location = new System.Drawing.Point(462, 49);
             this.lblSNVNam.Name = "lblSNVNam";
             this.lblSNVNam.Size = new System.Drawing.Size(29, 16);
             this.lblSNVNam.TabIndex = 41;
@@ -460,6 +464,25 @@
             this.label2.TabIndex = 38;
             this.label2.Text = "Tổng số nhân viên";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 5;
+            this.guna2Elipse1.TargetControl = this.btnAddNV;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 5;
+            this.guna2Elipse2.TargetControl = this.btnSuaNV;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 5;
+            this.guna2Elipse3.TargetControl = this.btnDeleteNV;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormQLNV
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -484,6 +507,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            
             this.Text = "Quản lý nhân viên";
             this.Load += new System.EventHandler(this.FormQLNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataSetListEmployees)).EndInit();
@@ -526,5 +550,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblTSNV;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private System.Windows.Forms.Timer timer1;
     }
 }

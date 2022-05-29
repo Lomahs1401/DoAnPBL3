@@ -223,6 +223,7 @@ namespace DoAnPBL3
             lblTime.Text = DateTime.Now.ToLongTimeString();
             lblDate.Text = DateTime.Now.ToLongDateString();
             rjddmUserSettingMenu.IsMainMenu = true;
+            guna2ShadowForm1.SetShadowForm(this);
         }
 
         private void timer1_Tick(object sender, EventArgs e)

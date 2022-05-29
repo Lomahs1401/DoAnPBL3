@@ -225,6 +225,36 @@
     <Compile Include="FormAlert.Designer.cs">
       <DependentUpon>FormAlert.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormIdentify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIdentify.Designer.cs">
+      <DependentUpon>FormIdentify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIntro.Designer.cs">
+      <DependentUpon>FormIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoading.Designer.cs">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoading2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoading2.Designer.cs">
+      <DependentUpon>FormLoading2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoading3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoading3.Designer.cs">
+      <DependentUpon>FormLoading3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -396,6 +426,7 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Publisher.cs" />
+    <Compile Include="MyApplicationContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -420,6 +451,12 @@
       <DependentUpon>RJTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
+    <Compile Include="FormSuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaSach.Designer.cs">
+      <DependentUpon>FormSuaSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validator\EmployeeValidator.cs" />
     <EmbeddedResource Include="FormAddNV.resx">
       <DependentUpon>FormAddNV.cs</DependentUpon>
@@ -429,6 +466,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlert.resx">
       <DependentUpon>FormAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIdentify.resx">
+      <DependentUpon>FormIdentify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntro.resx">
+      <DependentUpon>FormIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading.resx">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading2.resx">
+      <DependentUpon>FormLoading2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading3.resx">
+      <DependentUpon>FormLoading3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -486,6 +538,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSuaNV.resx">
       <DependentUpon>FormSuaNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaSach.resx">
+      <DependentUpon>FormSuaSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTest.resx">
       <DependentUpon>FormTest.cs</DependentUpon>
@@ -554,6 +609,7 @@
     <Content Include="Img\chat.png" />
     <None Include="Img\customer information.png" />
     <None Include="Img\delete_30px.png" />
+    <None Include="Img\cloud.png" />
     <Content Include="Img\error.png" />
     <Content Include="Img\exclamation.png" />
     <None Include="Img\exit.png" />
@@ -571,6 +627,10 @@
     <None Include="Img\icons8_lock_18px.png" />
     <None Include="Img\icons8_picture_30px.png" />
     <None Include="Img\icons8_create_document_30px.png" />
+    <None Include="Img\image_processing20211012-14636-1mam6hy.gif" />
+    <None Include="Img\icons8_rocket_40px.png" />
+    <None Include="Img\icons8_rocket_90px.png" />
+    <None Include="Img\icons8_launch_40px.png" />
     <Content Include="Img\information.png" />
     <None Include="Img\logo menu.png" />
     <None Include="Img\java.png" />
@@ -584,6 +644,11 @@
     <None Include="Img\logo bk.png" />
     <None Include="Img\man 1.png" />
     <None Include="Img\pencil.png" />
+    <None Include="Img\logo book store.png" />
+    <None Include="Img\j3IISku.gif" />
+    <None Include="Img\puddle.png" />
+    <None Include="Img\logo khoa.jpg" />
+    <None Include="Img\nano-technology.png" />
     <Content Include="Img\question.png" />
     <None Include="Img\web-browser.png" />
     <None Include="Img\sql-file2.png" />
@@ -600,6 +665,10 @@
     <None Include="Img\sticky-notes.png" />
     <None Include="Img\remove_image_40px.png" />
     <None Include="Img\remove_image_30px.png" />
+    <None Include="Img\rain_L.png" />
+    <None Include="Img\test 1.jpg" />
+    <None Include="Img\test 1_cleanup_digital_art_x4.jpg" />
+    <None Include="Img\shield.png" />
     <Content Include="NotificationIcons\error.png" />
     <Content Include="NotificationIcons\icons8_cancel_45px.png" />
     <Content Include="NotificationIcons\info.png" />

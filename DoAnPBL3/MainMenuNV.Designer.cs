@@ -31,57 +31,59 @@ namespace DoAnPBL3
         {
             this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnQLKH = new FontAwesome.Sharp.IconButton();
+            this.btnBS = new FontAwesome.Sharp.IconButton();
+            this.btnQLS = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.AdminPicture = new FontAwesome.Sharp.IconPictureBox();
             this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
+            this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
+            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.lblUserName = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.rjddmUserSettingMenu = new DoAnPBL3.RJDropDownMenu(this.components);
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.lblDate = new System.Windows.Forms.Label();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.AdminPicture = new FontAwesome.Sharp.IconPictureBox();
-            this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
-            this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
-            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.btnQLKH = new FontAwesome.Sharp.IconButton();
-            this.btnBS = new FontAwesome.Sharp.IconButton();
-            this.btnQLS = new FontAwesome.Sharp.IconButton();
-            this.btnHome = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.rjddmUserSettingMenu = new DoAnPBL3.RJDropDownMenu(this.components);
             this.chỉnhSửaTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ghiChúToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelDesktop.SuspendLayout();
-            this.rjddmUserSettingMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.rjddmUserSettingMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -98,6 +100,81 @@ namespace DoAnPBL3
             this.panelMenu.Size = new System.Drawing.Size(217, 668);
             this.panelMenu.TabIndex = 1;
             // 
+            // btnQLKH
+            // 
+            this.btnQLKH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQLKH.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLKH.FlatAppearance.BorderSize = 0;
+            this.btnQLKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLKH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLKH.ForeColor = System.Drawing.Color.White;
+            this.btnQLKH.IconChar = FontAwesome.Sharp.IconChar.UserTag;
+            this.btnQLKH.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnQLKH.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnQLKH.IconSize = 32;
+            this.btnQLKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLKH.Location = new System.Drawing.Point(0, 294);
+            this.btnQLKH.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQLKH.Name = "btnQLKH";
+            this.btnQLKH.Padding = new System.Windows.Forms.Padding(8, 0, 16, 0);
+            this.btnQLKH.Size = new System.Drawing.Size(217, 77);
+            this.btnQLKH.TabIndex = 4;
+            this.btnQLKH.Text = "Quản lý khách hàng";
+            this.btnQLKH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLKH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQLKH.UseVisualStyleBackColor = true;
+            this.btnQLKH.Click += new System.EventHandler(this.btnQLKH_Click);
+            // 
+            // btnBS
+            // 
+            this.btnBS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBS.FlatAppearance.BorderSize = 0;
+            this.btnBS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBS.ForeColor = System.Drawing.Color.White;
+            this.btnBS.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
+            this.btnBS.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnBS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBS.IconSize = 32;
+            this.btnBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBS.Location = new System.Drawing.Point(0, 217);
+            this.btnBS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBS.Name = "btnBS";
+            this.btnBS.Padding = new System.Windows.Forms.Padding(8, 0, 16, 0);
+            this.btnBS.Size = new System.Drawing.Size(217, 77);
+            this.btnBS.TabIndex = 2;
+            this.btnBS.Text = "Bán sách";
+            this.btnBS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBS.UseVisualStyleBackColor = true;
+            this.btnBS.Click += new System.EventHandler(this.btnBS_Click);
+            // 
+            // btnQLS
+            // 
+            this.btnQLS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQLS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLS.FlatAppearance.BorderSize = 0;
+            this.btnQLS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLS.ForeColor = System.Drawing.Color.White;
+            this.btnQLS.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.btnQLS.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnQLS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnQLS.IconSize = 32;
+            this.btnQLS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLS.Location = new System.Drawing.Point(0, 140);
+            this.btnQLS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQLS.Name = "btnQLS";
+            this.btnQLS.Padding = new System.Windows.Forms.Padding(8, 0, 16, 0);
+            this.btnQLS.Size = new System.Drawing.Size(217, 77);
+            this.btnQLS.TabIndex = 1;
+            this.btnQLS.Text = "Quản lý sách";
+            this.btnQLS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQLS.UseVisualStyleBackColor = true;
+            this.btnQLS.Click += new System.EventHandler(this.btnQLS_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnHome);
@@ -107,6 +184,19 @@ namespace DoAnPBL3
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 140);
             this.panel1.TabIndex = 0;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome.Image = global::DoAnPBL3.Properties.Resources.Logo_Project_AM_2;
+            this.btnHome.Location = new System.Drawing.Point(-6, -2);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(217, 140);
+            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnHome.TabIndex = 0;
+            this.btnHome.TabStop = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelTitleBar
             // 
@@ -125,6 +215,25 @@ namespace DoAnPBL3
             this.panelTitleBar.Size = new System.Drawing.Size(983, 74);
             this.panelTitleBar.TabIndex = 2;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // AdminPicture
+            // 
+            this.AdminPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AdminPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            this.AdminPicture.BackgroundImage = global::DoAnPBL3.Properties.Resources.test2;
+            this.AdminPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AdminPicture.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.AdminPicture.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.AdminPicture.IconColor = System.Drawing.SystemColors.ControlText;
+            this.AdminPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.AdminPicture.IconSize = 45;
+            this.AdminPicture.Location = new System.Drawing.Point(749, 15);
+            this.AdminPicture.Margin = new System.Windows.Forms.Padding(2);
+            this.AdminPicture.Name = "AdminPicture";
+            this.AdminPicture.Size = new System.Drawing.Size(46, 45);
+            this.AdminPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdminPicture.TabIndex = 13;
+            this.AdminPicture.TabStop = false;
             // 
             // btnAdmin
             // 
@@ -147,6 +256,66 @@ namespace DoAnPBL3
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMinimize.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btnMinimize.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinimize.IconSize = 20;
+            this.btnMinimize.Location = new System.Drawing.Point(884, 1);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnMinimize.Size = new System.Drawing.Size(30, 20);
+            this.btnMinimize.TabIndex = 10;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            this.btnMinimize.MouseEnter += new System.EventHandler(this.btnMinimize_MouseEnter);
+            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMaximize.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.btnMaximize.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMaximize.IconSize = 20;
+            this.btnMaximize.Location = new System.Drawing.Point(917, 1);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnMaximize.Size = new System.Drawing.Size(30, 20);
+            this.btnMaximize.TabIndex = 9;
+            this.btnMaximize.TabStop = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            this.btnMaximize.MouseEnter += new System.EventHandler(this.btnMaximize_MouseEnter);
+            this.btnMaximize.MouseLeave += new System.EventHandler(this.btnMaximize_MouseLeave);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnClose.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.btnClose.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClose.IconSize = 20;
+            this.btnClose.Location = new System.Drawing.Point(950, 1);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnClose.Size = new System.Drawing.Size(30, 20);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
+            this.btnClose.MouseHover += new System.EventHandler(this.btnClose_MouseLeave);
+            // 
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
@@ -159,21 +328,36 @@ namespace DoAnPBL3
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(59)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.RoyalBlue;
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.IconSize = 45;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(17, 15);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(46, 45);
+            this.iconCurrentChildForm.TabIndex = 0;
+            this.iconCurrentChildForm.TabStop = false;
+            // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.panelDesktop.Controls.Add(this.lblUserName);
+            this.panelDesktop.Controls.Add(this.lblTime);
+            this.panelDesktop.Controls.Add(this.lblDate);
             this.panelDesktop.Controls.Add(this.iconPictureBox6);
             this.panelDesktop.Controls.Add(this.iconPictureBox5);
             this.panelDesktop.Controls.Add(this.iconPictureBox3);
             this.panelDesktop.Controls.Add(this.iconPictureBox4);
-            this.panelDesktop.Controls.Add(this.lblDate);
-            this.panelDesktop.Controls.Add(this.lblTime);
-            this.panelDesktop.Controls.Add(this.label3);
             this.panelDesktop.Controls.Add(this.iconPictureBox1);
             this.panelDesktop.Controls.Add(this.label2);
             this.panelDesktop.Controls.Add(this.iconPictureBox2);
             this.panelDesktop.Controls.Add(this.label1);
+            this.panelDesktop.Controls.Add(this.guna2PictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(217, 83);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);
@@ -193,19 +377,6 @@ namespace DoAnPBL3
             this.lblUserName.TabIndex = 20;
             this.lblUserName.Text = "User:";
             // 
-            // lblDate
-            // 
-            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(824, 4);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(37, 16);
-            this.lblDate.TabIndex = 14;
-            this.lblDate.Text = "Date";
-            // 
             // lblTime
             // 
             this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -219,86 +390,18 @@ namespace DoAnPBL3
             this.lblTime.TabIndex = 13;
             this.lblTime.Text = "Time";
             // 
-            // label3
+            // lblDate
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(342, 60);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(295, 24);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Ứng dụng quản lý bán sách ";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(23, 566);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 12);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Giáo viên hướng dẫn: Nguyễn Thị Minh Hỷ ";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(546, 566);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 12);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Developed by Group 2: Nguyễn Khắc Thái, Lê Hoàng Long, Nguyễn Trọng Nghĩa and Đào" +
-    " Thủy Trang";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(59)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(217, 74);
-            this.panelShadow.Margin = new System.Windows.Forms.Padding(2);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(983, 9);
-            this.panelShadow.TabIndex = 5;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // rjddmUserSettingMenu
-            // 
-            this.rjddmUserSettingMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(59)))));
-            this.rjddmUserSettingMenu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjddmUserSettingMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.rjddmUserSettingMenu.IsMainMenu = false;
-            this.rjddmUserSettingMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chỉnhSửaTàiKhoảnToolStripMenuItem,
-            this.ghiChúToolStripMenuItem,
-            this.đăngXuấtToolStripMenuItem});
-            this.rjddmUserSettingMenu.MenuItemHeight = 25;
-            this.rjddmUserSettingMenu.MenuItemTextColor = System.Drawing.Color.DimGray;
-            this.rjddmUserSettingMenu.Name = "rjddmAdminSettingMenu";
-            this.rjddmUserSettingMenu.PrimaryColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjddmUserSettingMenu.Size = new System.Drawing.Size(208, 82);
-            this.rjddmUserSettingMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.rjddmUserSettingMenu_ItemClicked);
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this;
+            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(824, 4);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(37, 16);
+            this.lblDate.TabIndex = 14;
+            this.lblDate.Text = "Date";
             // 
             // iconPictureBox6
             // 
@@ -395,6 +498,19 @@ namespace DoAnPBL3
             this.iconPictureBox1.TabIndex = 10;
             this.iconPictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(23, 566);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 12);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Giáo viên hướng dẫn: Nguyễn Thị Minh Hỷ ";
+            // 
             // iconPictureBox2
             // 
             this.iconPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -411,187 +527,68 @@ namespace DoAnPBL3
             this.iconPictureBox2.TabIndex = 7;
             this.iconPictureBox2.TabStop = false;
             // 
-            // AdminPicture
+            // label1
             // 
-            this.AdminPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AdminPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.AdminPicture.BackgroundImage = global::DoAnPBL3.Properties.Resources.test2;
-            this.AdminPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AdminPicture.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.AdminPicture.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.AdminPicture.IconColor = System.Drawing.SystemColors.ControlText;
-            this.AdminPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.AdminPicture.IconSize = 45;
-            this.AdminPicture.Location = new System.Drawing.Point(749, 15);
-            this.AdminPicture.Margin = new System.Windows.Forms.Padding(2);
-            this.AdminPicture.Name = "AdminPicture";
-            this.AdminPicture.Size = new System.Drawing.Size(46, 45);
-            this.AdminPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AdminPicture.TabIndex = 13;
-            this.AdminPicture.TabStop = false;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(546, 566);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(412, 12);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Developed by Group 2: Nguyễn Khắc Thái, Lê Hoàng Long, Nguyễn Trọng Nghĩa and Đào" +
+    " Thủy Trang";
             // 
-            // btnMinimize
+            // guna2PictureBox1
             // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnMinimize.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMinimize.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimize.IconSize = 20;
-            this.btnMinimize.Location = new System.Drawing.Point(884, 1);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.btnMinimize.Size = new System.Drawing.Size(30, 20);
-            this.btnMinimize.TabIndex = 10;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            this.btnMinimize.MouseEnter += new System.EventHandler(this.btnMinimize_MouseEnter);
-            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::DoAnPBL3.Properties.Resources.logo_book_store;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(56, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(826, 422);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 23;
+            this.guna2PictureBox1.TabStop = false;
             // 
-            // btnMaximize
+            // timer1
             // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnMaximize.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.btnMaximize.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.IconSize = 20;
-            this.btnMaximize.Location = new System.Drawing.Point(917, 1);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.btnMaximize.Size = new System.Drawing.Size(30, 20);
-            this.btnMaximize.TabIndex = 9;
-            this.btnMaximize.TabStop = false;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            this.btnMaximize.MouseEnter += new System.EventHandler(this.btnMaximize_MouseEnter);
-            this.btnMaximize.MouseLeave += new System.EventHandler(this.btnMaximize_MouseLeave);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnClose
+            // panelShadow
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnClose.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.btnClose.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(950, 1);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.btnClose.Size = new System.Drawing.Size(30, 20);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
-            this.btnClose.MouseHover += new System.EventHandler(this.btnClose_MouseLeave);
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(59)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(217, 74);
+            this.panelShadow.Margin = new System.Windows.Forms.Padding(2);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(983, 9);
+            this.panelShadow.TabIndex = 5;
             // 
-            // iconCurrentChildForm
+            // guna2DragControl1
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(59)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.RoyalBlue;
-            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 45;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(17, 15);
-            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(46, 45);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // btnQLKH
+            // rjddmUserSettingMenu
             // 
-            this.btnQLKH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQLKH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQLKH.FlatAppearance.BorderSize = 0;
-            this.btnQLKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLKH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQLKH.ForeColor = System.Drawing.Color.White;
-            this.btnQLKH.IconChar = FontAwesome.Sharp.IconChar.UserTag;
-            this.btnQLKH.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnQLKH.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnQLKH.IconSize = 32;
-            this.btnQLKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLKH.Location = new System.Drawing.Point(0, 294);
-            this.btnQLKH.Margin = new System.Windows.Forms.Padding(2);
-            this.btnQLKH.Name = "btnQLKH";
-            this.btnQLKH.Padding = new System.Windows.Forms.Padding(8, 0, 16, 0);
-            this.btnQLKH.Size = new System.Drawing.Size(217, 77);
-            this.btnQLKH.TabIndex = 4;
-            this.btnQLKH.Text = "Quản lý khách hàng";
-            this.btnQLKH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLKH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnQLKH.UseVisualStyleBackColor = true;
-            this.btnQLKH.Click += new System.EventHandler(this.btnQLKH_Click);
-            // 
-            // btnBS
-            // 
-            this.btnBS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBS.FlatAppearance.BorderSize = 0;
-            this.btnBS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBS.ForeColor = System.Drawing.Color.White;
-            this.btnBS.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.btnBS.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnBS.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBS.IconSize = 32;
-            this.btnBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBS.Location = new System.Drawing.Point(0, 217);
-            this.btnBS.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBS.Name = "btnBS";
-            this.btnBS.Padding = new System.Windows.Forms.Padding(8, 0, 16, 0);
-            this.btnBS.Size = new System.Drawing.Size(217, 77);
-            this.btnBS.TabIndex = 2;
-            this.btnBS.Text = "Bán sách";
-            this.btnBS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBS.UseVisualStyleBackColor = true;
-            this.btnBS.Click += new System.EventHandler(this.btnBS_Click);
-            // 
-            // btnQLS
-            // 
-            this.btnQLS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQLS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQLS.FlatAppearance.BorderSize = 0;
-            this.btnQLS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQLS.ForeColor = System.Drawing.Color.White;
-            this.btnQLS.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.btnQLS.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnQLS.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnQLS.IconSize = 32;
-            this.btnQLS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLS.Location = new System.Drawing.Point(0, 140);
-            this.btnQLS.Margin = new System.Windows.Forms.Padding(2);
-            this.btnQLS.Name = "btnQLS";
-            this.btnQLS.Padding = new System.Windows.Forms.Padding(8, 0, 16, 0);
-            this.btnQLS.Size = new System.Drawing.Size(217, 77);
-            this.btnQLS.TabIndex = 1;
-            this.btnQLS.Text = "Quản lý sách";
-            this.btnQLS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnQLS.UseVisualStyleBackColor = true;
-            this.btnQLS.Click += new System.EventHandler(this.btnQLS_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHome.Image = global::DoAnPBL3.Properties.Resources.Logo_Project_AM_2;
-            this.btnHome.Location = new System.Drawing.Point(-6, -2);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(217, 140);
-            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnHome.TabIndex = 0;
-            this.btnHome.TabStop = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.rjddmUserSettingMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(43)))), ((int)(((byte)(59)))));
+            this.rjddmUserSettingMenu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjddmUserSettingMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.rjddmUserSettingMenu.IsMainMenu = false;
+            this.rjddmUserSettingMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chỉnhSửaTàiKhoảnToolStripMenuItem,
+            this.ghiChúToolStripMenuItem,
+            this.đăngXuấtToolStripMenuItem});
+            this.rjddmUserSettingMenu.MenuItemHeight = 25;
+            this.rjddmUserSettingMenu.MenuItemTextColor = System.Drawing.Color.DimGray;
+            this.rjddmUserSettingMenu.Name = "rjddmAdminSettingMenu";
+            this.rjddmUserSettingMenu.PrimaryColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjddmUserSettingMenu.Size = new System.Drawing.Size(208, 82);
+            this.rjddmUserSettingMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.rjddmUserSettingMenu_ItemClicked);
             // 
             // chỉnhSửaTàiKhoảnToolStripMenuItem
             // 
@@ -621,6 +618,16 @@ namespace DoAnPBL3
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.BorderRadius = 10;
+            this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.guna2ShadowForm1.TargetForm = this;
+            // 
             // MainMenuNV
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -636,23 +643,24 @@ namespace DoAnPBL3
             this.Load += new System.EventHandler(this.MainMenuQTV_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            this.rjddmUserSettingMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.rjddmUserSettingMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -681,7 +689,6 @@ namespace DoAnPBL3
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
-        private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
@@ -694,5 +701,7 @@ namespace DoAnPBL3
         private System.Windows.Forms.Panel panelShadow;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }

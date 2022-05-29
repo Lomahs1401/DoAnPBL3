@@ -43,6 +43,7 @@ namespace DoAnPBL3
             this.tbCMNDNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbBD = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbNameNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rjbtnOK = new DoAnPBL3.RJButton();
             this.lblCMND = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSDT = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@ namespace DoAnPBL3
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.rjbtnOK = new DoAnPBL3.RJButton();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelContainer.SuspendLayout();
@@ -303,6 +303,27 @@ namespace DoAnPBL3
             this.tbNameNV.Size = new System.Drawing.Size(409, 30);
             this.tbNameNV.TabIndex = 16;
             // 
+            // rjbtnOK
+            // 
+            this.rjbtnOK.BackColor = System.Drawing.Color.SeaGreen;
+            this.rjbtnOK.BackgroundColor = System.Drawing.Color.SeaGreen;
+            this.rjbtnOK.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjbtnOK.BorderRadius = 15;
+            this.rjbtnOK.BorderSize = 0;
+            this.rjbtnOK.FlatAppearance.BorderSize = 0;
+            this.rjbtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjbtnOK.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjbtnOK.ForeColor = System.Drawing.Color.White;
+            this.rjbtnOK.Location = new System.Drawing.Point(342, 574);
+            this.rjbtnOK.Margin = new System.Windows.Forms.Padding(2);
+            this.rjbtnOK.Name = "rjbtnOK";
+            this.rjbtnOK.Size = new System.Drawing.Size(145, 36);
+            this.rjbtnOK.TabIndex = 14;
+            this.rjbtnOK.Text = "OK";
+            this.rjbtnOK.TextColor = System.Drawing.Color.White;
+            this.rjbtnOK.UseVisualStyleBackColor = false;
+            this.rjbtnOK.Click += new System.EventHandler(this.rjbtnCancel_Click);
+            // 
             // lblCMND
             // 
             this.lblCMND.AutoSize = true;
@@ -414,27 +435,6 @@ namespace DoAnPBL3
             this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl2.TargetControl = this.panelTitleBar;
             this.guna2DragControl2.UseTransparentDrag = true;
-            // 
-            // rjbtnOK
-            // 
-            this.rjbtnOK.BackColor = System.Drawing.Color.SeaGreen;
-            this.rjbtnOK.BackgroundColor = System.Drawing.Color.SeaGreen;
-            this.rjbtnOK.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjbtnOK.BorderRadius = 15;
-            this.rjbtnOK.BorderSize = 0;
-            this.rjbtnOK.FlatAppearance.BorderSize = 0;
-            this.rjbtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjbtnOK.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjbtnOK.ForeColor = System.Drawing.Color.White;
-            this.rjbtnOK.Location = new System.Drawing.Point(342, 574);
-            this.rjbtnOK.Margin = new System.Windows.Forms.Padding(2);
-            this.rjbtnOK.Name = "rjbtnOK";
-            this.rjbtnOK.Size = new System.Drawing.Size(145, 36);
-            this.rjbtnOK.TabIndex = 14;
-            this.rjbtnOK.Text = "OK";
-            this.rjbtnOK.TextColor = System.Drawing.Color.White;
-            this.rjbtnOK.UseVisualStyleBackColor = false;
-            this.rjbtnOK.Click += new System.EventHandler(this.rjbtnCancel_Click);
             // 
             // FormTTNV
             // 

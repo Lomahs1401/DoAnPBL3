@@ -286,6 +286,7 @@ namespace DoAnPBL3
 
             lblDate.Text = DateTime.Now.ToLongDateString();
             rjddmAdminSettingMenu.IsMainMenu = true;
+            guna2ShadowForm1.SetShadowForm(this);
         }
 
 
@@ -393,7 +394,7 @@ namespace DoAnPBL3
             btnAdmin.BackColor = Color.FromArgb(20, 20, 20);
             btnAdmin.ForeColor = Color.Gainsboro;
             rjddmAdminSettingMenu.BackColor = Color.FromArgb(26, 26, 26);
-            label3.ForeColor = Color.White;
+            
             lblDate.ForeColor = Color.White;
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
@@ -428,7 +429,7 @@ namespace DoAnPBL3
             btnAdmin.BackColor = Color.FromArgb(235, 235, 235);
             btnAdmin.ForeColor = Color.Black;
             rjddmAdminSettingMenu.BackColor = Color.FromArgb(190, 190,190);
-            label3.ForeColor = Color.Black;
+            
             lblDate.ForeColor = Color.Black;
             label1.ForeColor = Color.Black;
             label2.ForeColor = Color.Black;
@@ -462,7 +463,7 @@ namespace DoAnPBL3
             btnAdmin.BackColor = Color.FromArgb(26, 25, 62);
             btnAdmin.ForeColor = Color.White;
             rjddmAdminSettingMenu.BackColor = Color.DarkSlateBlue;
-            label3.ForeColor = Color.White;
+           
             lblDate.ForeColor = Color.White;
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
