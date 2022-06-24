@@ -13,11 +13,15 @@ namespace DoAnPBL3
     public partial class FormQLBSNV : Form
     {
         private readonly string accountUsername;
+        FormCart b;
 
         public FormQLBSNV(string accountUsername)
         {
+            
             InitializeComponent();
             this.accountUsername = accountUsername;
+            b = new FormCart(accountUsername);
+
         }
 
         public void Alert(string msg, Form_Alert.EnmType type)
@@ -60,18 +64,28 @@ namespace DoAnPBL3
 
         private void RjbtnBuy_Click(object sender, EventArgs e)
         {
-            new FormCart(accountUsername).ShowDialog();
+            b.Show();
             FormQLBSNV_Load(sender, e);
         }
 
         private void RjbtnOrder_Click(object sender, EventArgs e)
         {
-            RJMessageBox.Show("Đặt hàng");
+            b.Show();
         }
 
         private void RjbtnAddCart_Click(object sender, EventArgs e)
         {
-            RJMessageBox.Show("Thêm vào giỏ hàng");
+            string ID_BookChosen;
+            if (dgvQLBSNV.CurrentRow == null)
+            {
+                RJMessageBox.Show("Hệ thống chưa có sách nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                 ID_BookChosen = dgvQLBSNV.CurrentRow.Cells["ID_Book"].Value.ToString();
+                b.Them_Sach(ID_BookChosen);
+            }
+            
         }
 
         private void RjtbTKS_KeyPress(object sender, KeyPressEventArgs e)

@@ -201,7 +201,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="XanderUI">
-      <HintPath>..\..\..\..\Downloads\Compressed\XanderUI-master\XanderUI.dll</HintPath>
+      <HintPath>..\..\..\Downloads\XanderUI-master\XanderUI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -214,6 +214,18 @@
     </Compile>
     <Compile Include="FormAuthenticateCustomer.Designer.cs">
       <DependentUpon>FormAuthenticateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChiTietHoaDon.Designer.cs">
+      <DependentUpon>FormChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHoaDonKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoaDonKhachHang.Designer.cs">
+      <DependentUpon>FormHoaDonKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormIdentify.cs">
       <SubType>Form</SubType>
@@ -469,6 +481,12 @@
     <EmbeddedResource Include="FormAuthenticateCustomer.resx">
       <DependentUpon>FormAuthenticateCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormChiTietHoaDon.resx">
+      <DependentUpon>FormChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHoaDonKhachHang.resx">
+      <DependentUpon>FormHoaDonKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormIdentify.resx">
       <DependentUpon>FormIdentify.cs</DependentUpon>
     </EmbeddedResource>
@@ -638,6 +656,7 @@
     <None Include="Img\administrator_woman2.png" />
     <None Include="Img\administrator-man.png" />
     <None Include="Img\book info 2.png" />
+    <None Include="Img\bill.png" />
     <Content Include="Img\chat.png" />
     <None Include="Img\customer information.png" />
     <None Include="Img\delete_30px.png" />
@@ -712,6 +731,8 @@
     <None Include="Img\GI\yoimiya.png" />
     <None Include="Img\GI\yunjin.png" />
     <None Include="Img\GI\zhongli.png" />
+    <None Include="Img\icons8-buying-30.png" />
+    <None Include="Img\file.png" />
     <Content Include="Img\information.png" />
     <None Include="Img\java.png" />
     <None Include="Img\money-bag.png" />

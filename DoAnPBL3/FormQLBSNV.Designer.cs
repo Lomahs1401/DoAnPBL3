@@ -47,7 +47,6 @@ namespace DoAnPBL3
             this.btnTKS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rjbtnBuy = new DoAnPBL3.RJButton();
             this.rjbtnAddCart = new DoAnPBL3.RJButton();
             this.rjbtnOrder = new DoAnPBL3.RJButton();
             this.dgvQLBSNV = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -212,38 +211,12 @@ namespace DoAnPBL3
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.rjbtnBuy);
             this.panel1.Controls.Add(this.rjbtnAddCart);
             this.panel1.Controls.Add(this.rjbtnOrder);
             this.panel1.Location = new System.Drawing.Point(828, 170);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 155);
             this.panel1.TabIndex = 66;
-            // 
-            // rjbtnBuy
-            // 
-            this.rjbtnBuy.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rjbtnBuy.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.rjbtnBuy.BackgroundColor = System.Drawing.Color.MediumSeaGreen;
-            this.rjbtnBuy.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjbtnBuy.BorderRadius = 20;
-            this.rjbtnBuy.BorderSize = 0;
-            this.rjbtnBuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rjbtnBuy.FlatAppearance.BorderSize = 0;
-            this.rjbtnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjbtnBuy.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjbtnBuy.ForeColor = System.Drawing.Color.White;
-            this.rjbtnBuy.Image = global::DoAnPBL3.Properties.Resources.icons8_cheap_2_30px;
-            this.rjbtnBuy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjbtnBuy.Location = new System.Drawing.Point(0, 3);
-            this.rjbtnBuy.Name = "rjbtnBuy";
-            this.rjbtnBuy.Size = new System.Drawing.Size(150, 40);
-            this.rjbtnBuy.TabIndex = 38;
-            this.rjbtnBuy.Text = "Mua sách";
-            this.rjbtnBuy.TextColor = System.Drawing.Color.White;
-            this.rjbtnBuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjbtnBuy.UseVisualStyleBackColor = false;
-            this.rjbtnBuy.Click += new System.EventHandler(this.RjbtnBuy_Click);
             // 
             // rjbtnAddCart
             // 
@@ -260,7 +233,7 @@ namespace DoAnPBL3
             this.rjbtnAddCart.ForeColor = System.Drawing.Color.White;
             this.rjbtnAddCart.Image = global::DoAnPBL3.Properties.Resources.icons8_add_shopping_cart_30px;
             this.rjbtnAddCart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjbtnAddCart.Location = new System.Drawing.Point(0, 58);
+            this.rjbtnAddCart.Location = new System.Drawing.Point(0, 3);
             this.rjbtnAddCart.Name = "rjbtnAddCart";
             this.rjbtnAddCart.Padding = new System.Windows.Forms.Padding(18, 0, 16, 0);
             this.rjbtnAddCart.Size = new System.Drawing.Size(150, 40);
@@ -284,13 +257,13 @@ namespace DoAnPBL3
             this.rjbtnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjbtnOrder.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjbtnOrder.ForeColor = System.Drawing.Color.White;
-            this.rjbtnOrder.Image = global::DoAnPBL3.Properties.Resources.icons8_drop_shipping_30px;
+            this.rjbtnOrder.Image = global::DoAnPBL3.Properties.Resources.icons8_buying_30;
             this.rjbtnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjbtnOrder.Location = new System.Drawing.Point(0, 112);
+            this.rjbtnOrder.Location = new System.Drawing.Point(0, 57);
             this.rjbtnOrder.Name = "rjbtnOrder";
             this.rjbtnOrder.Size = new System.Drawing.Size(150, 40);
             this.rjbtnOrder.TabIndex = 39;
-            this.rjbtnOrder.Text = "Đặt hàng";
+            this.rjbtnOrder.Text = "Xem giỏ hàng";
             this.rjbtnOrder.TextColor = System.Drawing.Color.White;
             this.rjbtnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rjbtnOrder.UseVisualStyleBackColor = false;
@@ -469,7 +442,6 @@ namespace DoAnPBL3
         #endregion
         private XanderUI.XUISegment xuiSegmentSach;
         private RJTextBox rjtbTKS;
-        private RJButton rjbtnBuy;
         private RJButton rjbtnOrder;
         private Guna.UI2.WinForms.Guna2Button btnTKS;
         private System.Windows.Forms.PictureBox pictureBox3;

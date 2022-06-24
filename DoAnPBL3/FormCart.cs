@@ -15,7 +15,7 @@ namespace DoAnPBL3
     public partial class FormCart : Form
     {
         private int Count = 0;
-        static int z = 0;
+        private int z = 0;
         public static string ID_Customer = "";
         readonly FormNhapMua[] currentChildForm = new FormNhapMua[100];
         private readonly string accountUsername;
@@ -78,6 +78,43 @@ namespace DoAnPBL3
             tbNumber.Texts = "";
             panelDesktop.Focus();
         }
+
+        public void Them_Sach(string ID)
+        {
+            bool check = true;
+            Count++;
+            if (Count <= 100)
+            {   
+                {
+                    foreach (FormNhapMua b in panelDesktop.Controls)
+                    {
+                        if (b.GetIDBook() == ID)
+                        { b.AddOneQuantity();
+                            check = false;
+                            break;
+                        }
+                        
+                    }
+                }
+                if (check)
+                {
+                    currentChildForm[z] = new FormNhapMua(z + 1);
+                    OpenChildForm(currentChildForm[z]);
+                    currentChildForm[z].SetIDBook(ID);
+                    currentChildForm[z].QuantityByOne();
+                    z++;
+                }
+            }
+            else if (Count > 100)
+            {
+                RJMessageBox.Show("Số lượng loại sách vượt quá giới hạn cho phép", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Count --;
+
+            }
+
+        }
+
+        
 
         private void TbNumber__TextChanged(object sender, EventArgs e)
         {
@@ -202,7 +239,8 @@ namespace DoAnPBL3
                             }
 
                             Alert("Mua sách thành công", Form_Alert.EnmType.Success);
-                            Close();
+                            panelDesktop.Controls.Clear();
+                            this.Hide();
                         }
                         z = 0;
                         ID_Customer = "";
@@ -226,8 +264,8 @@ namespace DoAnPBL3
 
         private void RjbtnCancel_Click(object sender, EventArgs e)
         {
-            z = 0;
-            Close();
+           
+            this.Hide();
         }
 
         private void TbNumber_KeyPress(object sender, KeyPressEventArgs e)
@@ -242,6 +280,7 @@ namespace DoAnPBL3
         private void PanelDesktop_ControlAdded(object sender, ControlEventArgs e)
         {
             Tinh();
+            
         }
 
         private void PanelDesktop_ControlRemoved(object sender, ControlEventArgs e)

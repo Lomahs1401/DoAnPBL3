@@ -151,5 +151,25 @@ namespace DoAnPBL3
         {
             Index.Text = index.ToString();
         }
+
+        public void SetIDBook(string ID)
+        {
+            tbIDBook.Text = ID;
+        }
+        public string GetIDBook()
+        {
+            return tbIDBook.Text;
+        }
+
+        public void QuantityByOne()
+        {
+            tbQuantity.Text = "1";
+
+        }
+
+        public void AddOneQuantity()
+        {
+            tbQuantity.Text = (Convert.ToInt32(tbQuantity.Text) + 1).ToString();
+        }
     }
 }
