@@ -45,7 +45,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnTKS = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHDTN = new FontAwesome.Sharp.IconButton();
             this.btnSXS = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvQLBS = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -215,30 +214,6 @@
             this.btnTKS.TabIndex = 22;
             this.btnTKS.Text = "Tìm kiếm";
             // 
-            // btnHDTN
-            // 
-            this.btnHDTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnHDTN.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnHDTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHDTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
-            this.btnHDTN.FlatAppearance.BorderSize = 0;
-            this.btnHDTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHDTN.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHDTN.ForeColor = System.Drawing.Color.White;
-            this.btnHDTN.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.btnHDTN.IconColor = System.Drawing.Color.White;
-            this.btnHDTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnHDTN.IconSize = 30;
-            this.btnHDTN.Location = new System.Drawing.Point(0, 67);
-            this.btnHDTN.Name = "btnHDTN";
-            this.btnHDTN.Size = new System.Drawing.Size(142, 47);
-            this.btnHDTN.TabIndex = 13;
-            this.btnHDTN.Text = "  Hóa đơn trong ngày";
-            this.btnHDTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHDTN.UseVisualStyleBackColor = false;
-            this.btnHDTN.MouseEnter += new System.EventHandler(this.BtnHDTN_MouseEnter);
-            this.btnHDTN.MouseLeave += new System.EventHandler(this.BtnHDTN_MouseLeave);
-            // 
             // btnSXS
             // 
             this.btnSXS.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -269,7 +244,6 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnSXS);
-            this.panel1.Controls.Add(this.btnHDTN);
             this.panel1.Location = new System.Drawing.Point(833, 170);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 118);
@@ -288,6 +262,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvQLBS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvQLBS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(65)))));
+            this.dgvQLBS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvQLBS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvQLBS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -549,7 +524,6 @@
 
         #endregion
         private FontAwesome.Sharp.IconButton btnSXS;
-        private FontAwesome.Sharp.IconButton btnHDTN;
         private RJTextBox rjtbTKS;
         private RJDropDownMenu rjDropDownMenuSXS;
         private System.Windows.Forms.ToolStripMenuItem chữCáiGiảmDầnToolStripMenuItem;

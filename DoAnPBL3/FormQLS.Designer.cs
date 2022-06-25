@@ -30,11 +30,11 @@ namespace DoAnPBL3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLS));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.xuiSegmentSach = new XanderUI.XUISegment();
             this.lblSSTA = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,13 +42,6 @@ namespace DoAnPBL3
             this.label3 = new System.Windows.Forms.Label();
             this.lblTSSDB = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnTKS = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSuaSach = new FontAwesome.Sharp.IconButton();
-            this.btnDeleteSach = new FontAwesome.Sharp.IconButton();
-            this.btnAddSach = new FontAwesome.Sharp.IconButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -61,11 +54,18 @@ namespace DoAnPBL3
             this.NameLanguage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDeleteSach = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSuaSach = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddSach = new FontAwesome.Sharp.IconButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnTKS = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLSNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQLSNV)).BeginInit();
             this.SuspendLayout();
             // 
             // xuiSegmentSach
@@ -157,128 +157,6 @@ namespace DoAnPBL3
             this.label2.TabIndex = 56;
             this.label2.Text = "Tổng số sách đang bán";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(206, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 64;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::DoAnPBL3.Properties.Resources.united_kingdom_flag;
-            this.pictureBox1.Location = new System.Drawing.Point(894, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 63;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = global::DoAnPBL3.Properties.Resources.vietnam_flag;
-            this.pictureBox2.Location = new System.Drawing.Point(537, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 62;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnTKS
-            // 
-            this.btnTKS.BorderRadius = 15;
-            this.btnTKS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTKS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTKS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTKS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTKS.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.btnTKS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnTKS.ForeColor = System.Drawing.Color.White;
-            this.btnTKS.Image = global::DoAnPBL3.Properties.Resources.icons8_search_20px;
-            this.btnTKS.Location = new System.Drawing.Point(261, 132);
-            this.btnTKS.Name = "btnTKS";
-            this.btnTKS.Size = new System.Drawing.Size(141, 32);
-            this.btnTKS.TabIndex = 55;
-            this.btnTKS.Text = "Tìm kiếm";
-            this.btnTKS.Click += new System.EventHandler(this.BtnTKS_Click);
-            // 
-            // btnSuaSach
-            // 
-            this.btnSuaSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSuaSach.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSuaSach.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
-            this.btnSuaSach.FlatAppearance.BorderSize = 0;
-            this.btnSuaSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuaSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaSach.ForeColor = System.Drawing.Color.White;
-            this.btnSuaSach.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
-            this.btnSuaSach.IconColor = System.Drawing.Color.White;
-            this.btnSuaSach.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSuaSach.IconSize = 30;
-            this.btnSuaSach.Location = new System.Drawing.Point(7, 50);
-            this.btnSuaSach.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSuaSach.Name = "btnSuaSach";
-            this.btnSuaSach.Size = new System.Drawing.Size(143, 44);
-            this.btnSuaSach.TabIndex = 47;
-            this.btnSuaSach.Text = "Sửa";
-            this.btnSuaSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSuaSach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSuaSach.UseVisualStyleBackColor = false;
-            this.btnSuaSach.Click += new System.EventHandler(this.BtnSuaSach_Click);
-            // 
-            // btnDeleteSach
-            // 
-            this.btnDeleteSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDeleteSach.BackColor = System.Drawing.Color.Firebrick;
-            this.btnDeleteSach.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
-            this.btnDeleteSach.FlatAppearance.BorderSize = 0;
-            this.btnDeleteSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteSach.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteSach.IconChar = FontAwesome.Sharp.IconChar.BookDead;
-            this.btnDeleteSach.IconColor = System.Drawing.Color.White;
-            this.btnDeleteSach.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDeleteSach.IconSize = 30;
-            this.btnDeleteSach.Location = new System.Drawing.Point(7, 99);
-            this.btnDeleteSach.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDeleteSach.Name = "btnDeleteSach";
-            this.btnDeleteSach.Size = new System.Drawing.Size(143, 44);
-            this.btnDeleteSach.TabIndex = 46;
-            this.btnDeleteSach.Text = "Xóa";
-            this.btnDeleteSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDeleteSach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDeleteSach.UseVisualStyleBackColor = false;
-            this.btnDeleteSach.Click += new System.EventHandler(this.BtnDeleteSach_Click);
-            // 
-            // btnAddSach
-            // 
-            this.btnAddSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddSach.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnAddSach.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
-            this.btnAddSach.FlatAppearance.BorderSize = 0;
-            this.btnAddSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSach.ForeColor = System.Drawing.Color.White;
-            this.btnAddSach.IconChar = FontAwesome.Sharp.IconChar.BookMedical;
-            this.btnAddSach.IconColor = System.Drawing.Color.White;
-            this.btnAddSach.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAddSach.IconSize = 30;
-            this.btnAddSach.Location = new System.Drawing.Point(6, 2);
-            this.btnAddSach.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddSach.Name = "btnAddSach";
-            this.btnAddSach.Size = new System.Drawing.Size(143, 44);
-            this.btnAddSach.TabIndex = 45;
-            this.btnAddSach.Text = "Thêm";
-            this.btnAddSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddSach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddSach.UseVisualStyleBackColor = false;
-            this.btnAddSach.Click += new System.EventHandler(this.BtnAddSach_Click);
-            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 5;
@@ -302,10 +180,9 @@ namespace DoAnPBL3
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.btnAddSach);
             this.panel1.Controls.Add(this.btnSuaSach);
-            this.panel1.Controls.Add(this.btnDeleteSach);
-            this.panel1.Location = new System.Drawing.Point(827, 170);
+            this.panel1.Controls.Add(this.btnAddSach);
+            this.panel1.Location = new System.Drawing.Point(827, 171);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(155, 154);
             this.panel1.TabIndex = 65;
@@ -339,8 +216,8 @@ namespace DoAnPBL3
             this.dgvQLSNV.AllowUserToDeleteRows = false;
             this.dgvQLSNV.AllowUserToResizeColumns = false;
             this.dgvQLSNV.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvQLSNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgvQLSNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvQLSNV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -349,14 +226,14 @@ namespace DoAnPBL3
             this.dgvQLSNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvQLSNV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvQLSNV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQLSNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvQLSNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvQLSNV.ColumnHeadersHeight = 30;
             this.dgvQLSNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvQLSNV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -365,14 +242,14 @@ namespace DoAnPBL3
             this.NameLanguage,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvQLSNV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvQLSNV.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvQLSNV.EnableHeadersVisualStyles = false;
             this.dgvQLSNV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.dgvQLSNV.Location = new System.Drawing.Point(12, 173);
@@ -381,12 +258,12 @@ namespace DoAnPBL3
             this.dgvQLSNV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvQLSNV.RowHeadersVisible = false;
             this.dgvQLSNV.RowHeadersWidth = 60;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvQLSNV.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial", 9F);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvQLSNV.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvQLSNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvQLSNV.Size = new System.Drawing.Size(816, 413);
             this.dgvQLSNV.TabIndex = 66;
@@ -453,11 +330,126 @@ namespace DoAnPBL3
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
+            // btnDeleteSach
+            // 
+            this.btnDeleteSach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteSach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteSach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteSach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteSach.FillColor = System.Drawing.Color.Firebrick;
+            this.btnDeleteSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteSach.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteSach.Image = global::DoAnPBL3.Properties.Resources.multiply_60px;
+            this.btnDeleteSach.ImageOffset = new System.Drawing.Point(-3, 0);
+            this.btnDeleteSach.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteSach.Location = new System.Drawing.Point(833, 270);
+            this.btnDeleteSach.Name = "btnDeleteSach";
+            this.btnDeleteSach.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btnDeleteSach.Size = new System.Drawing.Size(145, 44);
+            this.btnDeleteSach.TabIndex = 67;
+            this.btnDeleteSach.Text = "Xóa";
+            this.btnDeleteSach.Click += new System.EventHandler(this.BtnDeleteSach_Click);
+            // 
+            // btnSuaSach
+            // 
+            this.btnSuaSach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSuaSach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSuaSach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSuaSach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSuaSach.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnSuaSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSuaSach.ForeColor = System.Drawing.Color.White;
+            this.btnSuaSach.Image = global::DoAnPBL3.Properties.Resources.pencil_60px;
+            this.btnSuaSach.ImageOffset = new System.Drawing.Point(-3, 0);
+            this.btnSuaSach.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSuaSach.Location = new System.Drawing.Point(5, 51);
+            this.btnSuaSach.Name = "btnSuaSach";
+            this.btnSuaSach.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btnSuaSach.Size = new System.Drawing.Size(145, 44);
+            this.btnSuaSach.TabIndex = 68;
+            this.btnSuaSach.Text = "Sửa";
+            this.btnSuaSach.Click += new System.EventHandler(this.BtnSuaSach_Click);
+            // 
+            // btnAddSach
+            // 
+            this.btnAddSach.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddSach.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAddSach.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.btnAddSach.FlatAppearance.BorderSize = 0;
+            this.btnAddSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSach.ForeColor = System.Drawing.Color.White;
+            this.btnAddSach.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnAddSach.IconColor = System.Drawing.Color.White;
+            this.btnAddSach.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAddSach.IconSize = 30;
+            this.btnAddSach.Location = new System.Drawing.Point(6, 2);
+            this.btnAddSach.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddSach.Name = "btnAddSach";
+            this.btnAddSach.Size = new System.Drawing.Size(144, 44);
+            this.btnAddSach.TabIndex = 45;
+            this.btnAddSach.Text = "Thêm";
+            this.btnAddSach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddSach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddSach.UseVisualStyleBackColor = false;
+            this.btnAddSach.Click += new System.EventHandler(this.BtnAddSach_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(206, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(38, 27);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 64;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::DoAnPBL3.Properties.Resources.united_kingdom_flag;
+            this.pictureBox1.Location = new System.Drawing.Point(894, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 63;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.Image = global::DoAnPBL3.Properties.Resources.vietnam_flag;
+            this.pictureBox2.Location = new System.Drawing.Point(537, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 62;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnTKS
+            // 
+            this.btnTKS.BorderRadius = 15;
+            this.btnTKS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTKS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTKS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTKS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTKS.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.btnTKS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnTKS.ForeColor = System.Drawing.Color.White;
+            this.btnTKS.Image = global::DoAnPBL3.Properties.Resources.icons8_search_20px;
+            this.btnTKS.Location = new System.Drawing.Point(261, 132);
+            this.btnTKS.Name = "btnTKS";
+            this.btnTKS.Size = new System.Drawing.Size(141, 32);
+            this.btnTKS.TabIndex = 55;
+            this.btnTKS.Text = "Tìm kiếm";
+            this.btnTKS.Click += new System.EventHandler(this.BtnTKS_Click);
+            // 
             // FormQLS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(980, 585);
+            this.Controls.Add(this.btnDeleteSach);
             this.Controls.Add(this.dgvQLSNV);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
@@ -477,11 +469,11 @@ namespace DoAnPBL3
             this.Name = "FormQLS";
             this.Text = "Quản lý sách";
             this.Load += new System.EventHandler(this.FormQLS_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLSNV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQLSNV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,8 +483,6 @@ namespace DoAnPBL3
 
         private RJTextBox rjtbTKS;
         private XanderUI.XUISegment xuiSegmentSach;
-        private FontAwesome.Sharp.IconButton btnSuaSach;
-        private FontAwesome.Sharp.IconButton btnDeleteSach;
         private FontAwesome.Sharp.IconButton btnAddSach;
         private Guna.UI2.WinForms.Guna2Button btnTKS;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -515,5 +505,7 @@ namespace DoAnPBL3
         private System.Windows.Forms.DataGridViewTextBoxColumn NameLanguage;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteSach;
+        private Guna.UI2.WinForms.Guna2Button btnSuaSach;
     }
 }

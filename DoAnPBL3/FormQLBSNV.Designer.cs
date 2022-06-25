@@ -30,10 +30,10 @@ namespace DoAnPBL3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLBSNV));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.xuiSegmentSach = new XanderUI.XUISegment();
             this.lblSSTA = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,26 +41,31 @@ namespace DoAnPBL3
             this.label3 = new System.Windows.Forms.Label();
             this.lblTSSDB = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnTKS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rjbtnAddCart = new DoAnPBL3.RJButton();
-            this.rjbtnOrder = new DoAnPBL3.RJButton();
             this.dgvQLBSNV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ID_Book = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name_Book = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name_Language = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price_Book = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity_Book = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotificationCircle = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.lblNotificationCounter = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnTKS = new Guna.UI2.WinForms.Guna2Button();
+            this.rjbtnAddCart = new DoAnPBL3.RJButton();
+            this.rjbtnOrder = new DoAnPBL3.RJButton();
             this.rjtbTKS = new DoAnPBL3.RJTextBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLBSNV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQLBSNV)).BeginInit();
             this.SuspendLayout();
             // 
             // xuiSegmentSach
@@ -152,57 +157,6 @@ namespace DoAnPBL3
             this.label2.TabIndex = 56;
             this.label2.Text = "Tổng số sách đang bán";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(206, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 64;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::DoAnPBL3.Properties.Resources.united_kingdom_flag;
-            this.pictureBox1.Location = new System.Drawing.Point(894, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 63;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = global::DoAnPBL3.Properties.Resources.vietnam_flag;
-            this.pictureBox2.Location = new System.Drawing.Point(537, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 62;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnTKS
-            // 
-            this.btnTKS.BorderRadius = 15;
-            this.btnTKS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTKS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTKS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTKS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTKS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTKS.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.btnTKS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnTKS.ForeColor = System.Drawing.Color.White;
-            this.btnTKS.Image = global::DoAnPBL3.Properties.Resources.icons8_search_20px;
-            this.btnTKS.Location = new System.Drawing.Point(263, 133);
-            this.btnTKS.Name = "btnTKS";
-            this.btnTKS.Size = new System.Drawing.Size(141, 32);
-            this.btnTKS.TabIndex = 55;
-            this.btnTKS.Text = "Tìm kiếm";
-            this.btnTKS.Click += new System.EventHandler(this.BtnTKS_Click);
-            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 5;
@@ -213,61 +167,10 @@ namespace DoAnPBL3
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.rjbtnAddCart);
             this.panel1.Controls.Add(this.rjbtnOrder);
-            this.panel1.Location = new System.Drawing.Point(828, 170);
+            this.panel1.Location = new System.Drawing.Point(828, 177);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 155);
             this.panel1.TabIndex = 66;
-            // 
-            // rjbtnAddCart
-            // 
-            this.rjbtnAddCart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rjbtnAddCart.BackColor = System.Drawing.Color.DodgerBlue;
-            this.rjbtnAddCart.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.rjbtnAddCart.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjbtnAddCart.BorderRadius = 20;
-            this.rjbtnAddCart.BorderSize = 0;
-            this.rjbtnAddCart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rjbtnAddCart.FlatAppearance.BorderSize = 0;
-            this.rjbtnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjbtnAddCart.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjbtnAddCart.ForeColor = System.Drawing.Color.White;
-            this.rjbtnAddCart.Image = global::DoAnPBL3.Properties.Resources.icons8_add_shopping_cart_30px;
-            this.rjbtnAddCart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjbtnAddCart.Location = new System.Drawing.Point(0, 3);
-            this.rjbtnAddCart.Name = "rjbtnAddCart";
-            this.rjbtnAddCart.Padding = new System.Windows.Forms.Padding(18, 0, 16, 0);
-            this.rjbtnAddCart.Size = new System.Drawing.Size(150, 40);
-            this.rjbtnAddCart.TabIndex = 65;
-            this.rjbtnAddCart.Text = "Thêm vào giỏ hàng";
-            this.rjbtnAddCart.TextColor = System.Drawing.Color.White;
-            this.rjbtnAddCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjbtnAddCart.UseVisualStyleBackColor = false;
-            this.rjbtnAddCart.Click += new System.EventHandler(this.RjbtnAddCart_Click);
-            // 
-            // rjbtnOrder
-            // 
-            this.rjbtnOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rjbtnOrder.BackColor = System.Drawing.Color.Goldenrod;
-            this.rjbtnOrder.BackgroundColor = System.Drawing.Color.Goldenrod;
-            this.rjbtnOrder.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjbtnOrder.BorderRadius = 20;
-            this.rjbtnOrder.BorderSize = 0;
-            this.rjbtnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rjbtnOrder.FlatAppearance.BorderSize = 0;
-            this.rjbtnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjbtnOrder.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjbtnOrder.ForeColor = System.Drawing.Color.White;
-            this.rjbtnOrder.Image = global::DoAnPBL3.Properties.Resources.icons8_buying_30;
-            this.rjbtnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjbtnOrder.Location = new System.Drawing.Point(0, 57);
-            this.rjbtnOrder.Name = "rjbtnOrder";
-            this.rjbtnOrder.Size = new System.Drawing.Size(150, 40);
-            this.rjbtnOrder.TabIndex = 39;
-            this.rjbtnOrder.Text = "Xem giỏ hàng";
-            this.rjbtnOrder.TextColor = System.Drawing.Color.White;
-            this.rjbtnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjbtnOrder.UseVisualStyleBackColor = false;
-            this.rjbtnOrder.Click += new System.EventHandler(this.RjbtnOrder_Click);
             // 
             // dgvQLBSNV
             // 
@@ -275,8 +178,8 @@ namespace DoAnPBL3
             this.dgvQLBSNV.AllowUserToDeleteRows = false;
             this.dgvQLBSNV.AllowUserToResizeColumns = false;
             this.dgvQLBSNV.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvQLBSNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.White;
+            this.dgvQLBSNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle55;
             this.dgvQLBSNV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -285,14 +188,14 @@ namespace DoAnPBL3
             this.dgvQLBSNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvQLBSNV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvQLBSNV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQLBSNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvQLBSNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle56;
             this.dgvQLBSNV.ColumnHeadersHeight = 30;
             this.dgvQLBSNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvQLBSNV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -301,14 +204,14 @@ namespace DoAnPBL3
             this.Name_Language,
             this.Price_Book,
             this.Quantity_Book});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQLBSNV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle57.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Arial", 9F);
+            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvQLBSNV.DefaultCellStyle = dataGridViewCellStyle57;
             this.dgvQLBSNV.EnableHeadersVisualStyles = false;
             this.dgvQLBSNV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.dgvQLBSNV.Location = new System.Drawing.Point(6, 169);
@@ -382,6 +285,156 @@ namespace DoAnPBL3
             this.Quantity_Book.Name = "Quantity_Book";
             this.Quantity_Book.ReadOnly = true;
             // 
+            // NotificationCircle
+            // 
+            this.NotificationCircle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.NotificationCircle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.NotificationCircle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.NotificationCircle.DisabledState.FillColor = System.Drawing.Color.Firebrick;
+            this.NotificationCircle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.NotificationCircle.Enabled = false;
+            this.NotificationCircle.FillColor = System.Drawing.Color.Firebrick;
+            this.NotificationCircle.Font = new System.Drawing.Font("Arial", 5.25F);
+            this.NotificationCircle.ForeColor = System.Drawing.Color.White;
+            this.NotificationCircle.Location = new System.Drawing.Point(914, 118);
+            this.NotificationCircle.Name = "NotificationCircle";
+            this.NotificationCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.NotificationCircle.Size = new System.Drawing.Size(28, 28);
+            this.NotificationCircle.TabIndex = 69;
+            // 
+            // lblNotificationCounter
+            // 
+            this.lblNotificationCounter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNotificationCounter.AutoSize = true;
+            this.lblNotificationCounter.BackColor = System.Drawing.Color.Firebrick;
+            this.lblNotificationCounter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblNotificationCounter.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotificationCounter.ForeColor = System.Drawing.Color.White;
+            this.lblNotificationCounter.Location = new System.Drawing.Point(922, 125);
+            this.lblNotificationCounter.Name = "lblNotificationCounter";
+            this.lblNotificationCounter.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblNotificationCounter.Size = new System.Drawing.Size(13, 14);
+            this.lblNotificationCounter.TabIndex = 70;
+            this.lblNotificationCounter.Text = "0";
+            this.lblNotificationCounter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = global::DoAnPBL3.Properties.Resources.icons8_shopping_cart_52;
+            this.pictureBox4.Location = new System.Drawing.Point(854, 127);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(99, 44);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 68;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(206, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(38, 27);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 64;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::DoAnPBL3.Properties.Resources.united_kingdom_flag;
+            this.pictureBox1.Location = new System.Drawing.Point(894, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 63;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.Image = global::DoAnPBL3.Properties.Resources.vietnam_flag;
+            this.pictureBox2.Location = new System.Drawing.Point(537, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 62;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnTKS
+            // 
+            this.btnTKS.BorderRadius = 15;
+            this.btnTKS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTKS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTKS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTKS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTKS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTKS.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.btnTKS.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnTKS.ForeColor = System.Drawing.Color.White;
+            this.btnTKS.Image = global::DoAnPBL3.Properties.Resources.icons8_search_20px;
+            this.btnTKS.Location = new System.Drawing.Point(263, 133);
+            this.btnTKS.Name = "btnTKS";
+            this.btnTKS.Size = new System.Drawing.Size(141, 32);
+            this.btnTKS.TabIndex = 55;
+            this.btnTKS.Text = "Tìm kiếm";
+            this.btnTKS.Click += new System.EventHandler(this.BtnTKS_Click);
+            // 
+            // rjbtnAddCart
+            // 
+            this.rjbtnAddCart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rjbtnAddCart.BackColor = System.Drawing.Color.DodgerBlue;
+            this.rjbtnAddCart.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.rjbtnAddCart.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjbtnAddCart.BorderRadius = 20;
+            this.rjbtnAddCart.BorderSize = 0;
+            this.rjbtnAddCart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rjbtnAddCart.FlatAppearance.BorderSize = 0;
+            this.rjbtnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjbtnAddCart.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjbtnAddCart.ForeColor = System.Drawing.Color.White;
+            this.rjbtnAddCart.Image = global::DoAnPBL3.Properties.Resources.icons8_add_shopping_cart_30px;
+            this.rjbtnAddCart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjbtnAddCart.Location = new System.Drawing.Point(0, 3);
+            this.rjbtnAddCart.Name = "rjbtnAddCart";
+            this.rjbtnAddCart.Padding = new System.Windows.Forms.Padding(18, 0, 16, 0);
+            this.rjbtnAddCart.Size = new System.Drawing.Size(150, 40);
+            this.rjbtnAddCart.TabIndex = 65;
+            this.rjbtnAddCart.Text = "Thêm vào giỏ hàng";
+            this.rjbtnAddCart.TextColor = System.Drawing.Color.White;
+            this.rjbtnAddCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjbtnAddCart.UseVisualStyleBackColor = false;
+            this.rjbtnAddCart.Click += new System.EventHandler(this.RjbtnAddCart_Click);
+            // 
+            // rjbtnOrder
+            // 
+            this.rjbtnOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rjbtnOrder.BackColor = System.Drawing.Color.Goldenrod;
+            this.rjbtnOrder.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.rjbtnOrder.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjbtnOrder.BorderRadius = 20;
+            this.rjbtnOrder.BorderSize = 0;
+            this.rjbtnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rjbtnOrder.FlatAppearance.BorderSize = 0;
+            this.rjbtnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjbtnOrder.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjbtnOrder.ForeColor = System.Drawing.Color.White;
+            this.rjbtnOrder.Image = global::DoAnPBL3.Properties.Resources.icons8_buying_30;
+            this.rjbtnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjbtnOrder.Location = new System.Drawing.Point(0, 57);
+            this.rjbtnOrder.Name = "rjbtnOrder";
+            this.rjbtnOrder.Size = new System.Drawing.Size(150, 40);
+            this.rjbtnOrder.TabIndex = 39;
+            this.rjbtnOrder.Text = "Xem giỏ hàng";
+            this.rjbtnOrder.TextColor = System.Drawing.Color.White;
+            this.rjbtnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjbtnOrder.UseVisualStyleBackColor = false;
+            this.rjbtnOrder.Click += new System.EventHandler(this.RjbtnOrder_Click);
+            // 
             // rjtbTKS
             // 
             this.rjtbTKS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
@@ -410,6 +463,9 @@ namespace DoAnPBL3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(980, 585);
+            this.Controls.Add(this.lblNotificationCounter);
+            this.Controls.Add(this.NotificationCircle);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.dgvQLBSNV);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
@@ -429,11 +485,12 @@ namespace DoAnPBL3
             this.Name = "FormQLBSNV";
             this.Text = "Bán sách";
             this.Load += new System.EventHandler(this.FormQLBSNV_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLBSNV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQLBSNV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,5 +519,9 @@ namespace DoAnPBL3
         private System.Windows.Forms.DataGridViewTextBoxColumn Name_Language;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price_Book;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity_Book;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private Guna.UI2.WinForms.Guna2CircleButton NotificationCircle;
+        private System.Windows.Forms.Label lblNotificationCounter;
+        private System.Windows.Forms.Timer timer1;
     }
 }

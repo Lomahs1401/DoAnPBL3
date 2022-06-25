@@ -293,6 +293,7 @@ namespace DoAnPBL3
                 b.SetIndexText();
             }
             Tinh();
+            
         }
 
         private void PanelDesktop_Paint(object sender, PaintEventArgs e)
@@ -319,5 +320,13 @@ namespace DoAnPBL3
             tbNumDiverse.Text = panelDesktop.Controls.Count.ToString();
             tbQuantity.Text = quantity.ToString();
         }
+
+        public int GetVariety()
+        {
+            return panelDesktop.Controls.Count;
+        }
+
+
+
     }
 }

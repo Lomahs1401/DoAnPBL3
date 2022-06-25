@@ -661,6 +661,7 @@
     <None Include="Img\customer information.png" />
     <None Include="Img\delete_30px.png" />
     <None Include="Img\cloud.png" />
+    <None Include="Img\close_48px.png" />
     <Content Include="Img\error.png" />
     <Content Include="Img\exclamation.png" />
     <None Include="Img\icons8_user_settings_30px.png" />
@@ -733,6 +734,8 @@
     <None Include="Img\GI\zhongli.png" />
     <None Include="Img\icons8-buying-30.png" />
     <None Include="Img\file.png" />
+    <None Include="Img\icons8-shopping-cart-30.png" />
+    <None Include="Img\icons8-shopping-cart-52.png" />
     <Content Include="Img\information.png" />
     <None Include="Img\java.png" />
     <None Include="Img\money-bag.png" />
@@ -747,6 +750,8 @@
     <None Include="Img\j3IISku.gif" />
     <None Include="Img\puddle.png" />
     <None Include="Img\logo book store.png" />
+    <None Include="Img\multiply_60px.png" />
+    <None Include="Img\pencil_60px.png" />
     <Content Include="Img\question.png" />
     <None Include="Img\web-browser.png" />
     <None Include="Img\sql-file2.png" />
@@ -759,6 +764,7 @@
     <None Include="Img\test 1_cleanup_digital_art_x4.jpg" />
     <None Include="Img\rain_L.png" />
     <None Include="Img\test 2_digital_art_x4_cleanup.jpg" />
+    <None Include="Img\settings_48px.png" />
     <Content Include="NotificationIcons\error.png" />
     <Content Include="NotificationIcons\icons8_cancel_45px.png" />
     <Content Include="NotificationIcons\info.png" />

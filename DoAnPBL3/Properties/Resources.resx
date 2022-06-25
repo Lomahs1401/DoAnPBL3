@@ -142,11 +142,11 @@
   <data name="OPM tap 10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OPM tap 10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="noelle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\GI\noelle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_do_not_disturb_ios_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icons8_do_not_disturb_ios_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OPM tap 6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OPM tap 6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-shopping-cart-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icons8-shopping-cart-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-buying-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\icons8-buying-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +163,14 @@
   <data name="logo book store" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\logo book store.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="multiply_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\multiply_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="customer information" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\customer information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\chat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_do_not_disturb_ios_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\icons8_do_not_disturb_ios_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="diluc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\diluc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,17 +202,14 @@
   <data name="xinyan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\xinyan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qiqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\GI\qiqi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ningguang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\GI\ningguang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sach-giao-khoa-ngu-van-12-tap-2-500x554" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sach-giao-khoa-ngu-van-12-tap-2-500x554.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="java" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\java.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OPM tap 12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OPM tap 12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,14 +253,14 @@
   <data name="exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kokomi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\GI\kokomi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-shopping-cart-52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icons8-shopping-cart-52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OPM tap 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OPM tap 22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rain_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\rain_L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_reserve_30px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\icons8_reserve_30px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,6 +310,9 @@
   <data name="icons8_add_shopping_cart_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\icons8_add_shopping_cart_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\close_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="test 2_digital_art_x4_cleanup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\test 2_digital_art_x4_cleanup.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -322,8 +322,8 @@
   <data name="icons8_Logout_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\icons8_Logout_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yae miko" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\GI\yae miko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="noelle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\GI\noelle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shenhe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\shenhe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -351,6 +351,9 @@
   </data>
   <data name="payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\payment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sach-giao-khoa-sinh-hoc-lop-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sach-giao-khoa-sinh-hoc-lop-12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_create_document_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\icons8_create_document_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,9 +421,6 @@
   <data name="sach-giao-khoa-vat-ly-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sach-giao-khoa-vat-ly-12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="java" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\java.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sayu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\sayu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -429,6 +429,9 @@
   </data>
   <data name="female employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\female employee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sach-giao-khoa-ngu-van-12-tap-2-500x554" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sach-giao-khoa-ngu-van-12-tap-2-500x554.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="venti" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\venti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -442,8 +445,14 @@
   <data name="bach khoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\bach khoa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="nano-technology" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\nano-technology.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="united-kingdom flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\united-kingdom flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\settings_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\user info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -460,6 +469,9 @@
   <data name="price-tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\price-tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="yae miko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\GI\yae miko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ganyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\ganyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -475,9 +487,6 @@
   <data name="thoma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\thoma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ningguang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\GI\ningguang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="klee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\klee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -487,6 +496,9 @@
   <data name="fischl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\fischl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_cancel_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\NotificationIcons\icons8_cancel_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\itto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -495,6 +507,9 @@
   </data>
   <data name="icons8_drop_shipping_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\icons8_drop_shipping_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kokomi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\GI\kokomi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sach-giao-khoa-giai-tich-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sach-giao-khoa-giai-tich-12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -538,8 +553,8 @@
   <data name="tieng-anh-thi-diem-12-tap-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tieng-anh-thi-diem-12-tap-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_cancel_45px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\NotificationIcons\icons8_cancel_45px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rain_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\rain_L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eula" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\eula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -547,14 +562,17 @@
   <data name="OPM tap 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OPM tap 5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sach-giao-khoa-sinh-hoc-lop-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sach-giao-khoa-sinh-hoc-lop-12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nano-technology" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\nano-technology.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="web-browser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\web-browser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\bill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OPM tap 6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OPM tap 6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qiqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\GI\qiqi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="albedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\albedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -580,7 +598,7 @@
   <data name="kazuha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\GI\kazuha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\bill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pencil_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\pencil_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

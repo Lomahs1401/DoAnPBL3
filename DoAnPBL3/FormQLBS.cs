@@ -92,20 +92,14 @@ namespace DoAnPBL3
             btnSXS.BackColor = RGBColors.color4;
         }
 
-        private void BtnHDTN_MouseEnter(object sender, EventArgs e)
-        {
-            btnHDTN.BackColor = RGBColors.color4;
-        }
+        
 
         private void BtnSXS_MouseLeave(object sender, EventArgs e)
         {
             btnSXS.BackColor = Color.RoyalBlue;
         }
 
-        private void BtnHDTN_MouseLeave(object sender, EventArgs e)
-        {
-            btnHDTN.BackColor = Color.RoyalBlue;
-        }
+        
 
         private void BtnSXS_Click(object sender, EventArgs e)
         {

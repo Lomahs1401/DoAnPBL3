@@ -21,6 +21,9 @@ namespace DoAnPBL3
             InitializeComponent();
             this.accountUsername = accountUsername;
             b = new FormCart(accountUsername);
+            NotificationCircle.Hide();
+            lblNotificationCounter.Hide();
+
 
         }
 
@@ -32,6 +35,8 @@ namespace DoAnPBL3
 
         private void FormQLBSNV_Load(object sender, EventArgs e)
         {
+            timer1.Start();
+            
             dgvQLBSNV.RowHeadersVisible = true;
             dgvQLBSNV.BorderStyle = BorderStyle.FixedSingle;
             dgvQLBSNV.CellBorderStyle = DataGridViewCellBorderStyle.Single;
@@ -84,6 +89,7 @@ namespace DoAnPBL3
             {
                  ID_BookChosen = dgvQLBSNV.CurrentRow.Cells["ID_Book"].Value.ToString();
                 b.Them_Sach(ID_BookChosen);
+                
             }
             
         }
@@ -186,6 +192,31 @@ namespace DoAnPBL3
         {
             string ID_Book = dgvQLBSNV.CurrentRow.Cells["ID_Book"].Value.ToString();
             new FormTTS(ID_Book).ShowDialog();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {   if (b.GetVariety() != 0)
+            {
+                lblNotificationCounter.Text = b.GetVariety().ToString();
+                NotificationCircle.Show();
+                lblNotificationCounter.Show();
+                lblNotificationCounter.BringToFront();
+                if (b.GetVariety() > 99)
+                    lblNotificationCounter.Location = new Point(NotificationCircle.Location.X + 2, NotificationCircle.Location.Y + 7);
+                else if(b.GetVariety() > 9)
+                    lblNotificationCounter.Location = new Point(NotificationCircle.Location.X + 5, NotificationCircle.Location.Y + 7);
+                else
+                    lblNotificationCounter.Location = new Point(NotificationCircle.Location.X + 8, NotificationCircle.Location.Y + 7);
+            }
+        else
+            {
+                lblNotificationCounter.Text = b.GetVariety().ToString();
+                NotificationCircle.Hide();
+                lblNotificationCounter.Hide();
+                
+
+
+            }
         }
     }
 }

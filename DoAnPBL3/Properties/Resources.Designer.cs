@@ -273,6 +273,16 @@ namespace DoAnPBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_48px {
+            get {
+                object obj = ResourceManager.GetObject("close_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cloud {
             get {
                 object obj = ResourceManager.GetObject("cloud", resourceCulture);
@@ -583,6 +593,26 @@ namespace DoAnPBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_shopping_cart_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-shopping-cart-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_shopping_cart_52 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-shopping-cart-52", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_settings_30px {
             get {
                 object obj = ResourceManager.GetObject("icons8_user_settings_30px", resourceCulture);
@@ -826,6 +856,16 @@ namespace DoAnPBL3.Properties {
         internal static System.Drawing.Bitmap money_bag {
             get {
                 object obj = ResourceManager.GetObject("money-bag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap multiply_60px {
+            get {
+                object obj = ResourceManager.GetObject("multiply_60px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1143,6 +1183,16 @@ namespace DoAnPBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pencil_60px {
+            get {
+                object obj = ResourceManager.GetObject("pencil_60px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap price_tag {
             get {
                 object obj = ResourceManager.GetObject("price-tag", resourceCulture);
@@ -1326,6 +1376,16 @@ namespace DoAnPBL3.Properties {
         internal static System.Drawing.Bitmap sayu {
             get {
                 object obj = ResourceManager.GetObject("sayu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_48px {
+            get {
+                object obj = ResourceManager.GetObject("settings_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
