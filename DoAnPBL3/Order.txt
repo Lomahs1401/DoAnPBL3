@@ -1,0 +1,12 @@
+			THANH TOÁN HÓA ĐƠN
+		==================================
+	 Mã hóa đơn: HD0182
+	 Tên thu ngân: Phạm Tiến Hữu
+	 Ngày mua: 03/07/2022
+	 Tên khách hàng: Lê Văn Đức
+		==================================
+	 Tên sách: One Punch Man tập 6	Số lượng: 1	Giá tiền: 22000VNĐ	Thành tiền: 22000VNĐ
+	 Tên sách: One Punch Man tập 5	Số lượng: 1	Giá tiền: 22000VNĐ	Thành tiền: 22000VNĐ
+	 Tên sách: One Punch Man tập 4	Số lượng: 1	Giá tiền: 22000VNĐ	Thành tiền: 22000VNĐ
+		==================================
+	 Tổng tiền: 66000VNĐ

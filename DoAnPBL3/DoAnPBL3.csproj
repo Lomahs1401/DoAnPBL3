@@ -15,6 +15,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,7 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Books-2-icon.ico</ApplicationIcon>
+    <ApplicationIcon>books11.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -45,24 +60,136 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    <Reference Include="FluentEmail.Core, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentEmail.Core.3.0.2\lib\netstandard2.0\FluentEmail.Core.dll</HintPath>
     </Reference>
+    <Reference Include="FluentEmail.Smtp, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentEmail.Smtp.3.0.2\lib\netstandard2.0\FluentEmail.Smtp.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.3.1.24\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.24\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.3.1.24\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.24\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.24.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.24\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="ServiceStack.Interfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
       <HintPath>..\packages\ServiceStack.Interfaces.6.0.2\lib\net472\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net" />
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Web.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Web.DataVisualization.Design.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Windows.Forms.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,106 +199,398 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\Downloads\XanderUI-master\XanderUI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BLL_Login.cs" />
+    <Compile Include="BLL\BLL_QLBS.cs" />
+    <Compile Include="BLL\BLL_QLDT.cs" />
+    <Compile Include="BLL\BLL_QLGC.cs" />
+    <Compile Include="BLL\BLL_QLHD.cs" />
+    <Compile Include="BLL\BLL_QLKH.cs" />
+    <Compile Include="BLL\BLL_QLNV.cs" />
+    <Compile Include="BLL\BLL_QLQT.cs" />
+    <Compile Include="BLL\BLL_QLTK.cs" />
     <Compile Include="BookStoreContext.cs" />
-    <Compile Include="FormHDKH.cs">
+    <Compile Include="DAL\DAL_QLGC.cs" />
+    <Compile Include="DAL\DAL_QLQT.cs" />
+    <Compile Include="DAL\DAL_Login.cs" />
+    <Compile Include="DAL\DAL_QLBS.cs" />
+    <Compile Include="DAL\DAL_QLDT.cs" />
+    <Compile Include="DAL\DAL_QLHD.cs" />
+    <Compile Include="DAL\DAL_QLKH.cs" />
+    <Compile Include="DAL\DAL_QLNV.cs" />
+    <Compile Include="DAL\DAL_QLTK.cs" />
+    <Compile Include="FlatCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAuthenticateCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHDKH.Designer.cs">
-      <DependentUpon>FormHDKH.cs</DependentUpon>
+    <Compile Include="GUI\FormAuthenticateCustomer.Designer.cs">
+      <DependentUpon>FormAuthenticateCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTKKH.cs">
+    <Compile Include="GUI\FormChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTKKH.Designer.cs">
-      <DependentUpon>FormTKKH.cs</DependentUpon>
+    <Compile Include="GUI\FormChiTietHoaDon.Designer.cs">
+      <DependentUpon>FormChiTietHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="GUI\FormHoaDonKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="GUI\FormHoaDonKhachHang.Designer.cs">
+      <DependentUpon>FormHoaDonKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenuQTV.cs">
+    <Compile Include="GUI\FormIdentify.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenuQTV.Designer.cs">
+    <Compile Include="GUI\FormIdentify.Designer.cs">
+      <DependentUpon>FormIdentify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormIntro.Designer.cs">
+      <DependentUpon>FormIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLoading.Designer.cs">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSuaSach.Designer.cs">
+      <DependentUpon>FormSuaSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitialData.cs" />
+    <Compile Include="GUI\FormAddKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAddKH.Designer.cs">
+      <DependentUpon>FormAddKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormAddNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAddNV.Designer.cs">
+      <DependentUpon>FormAddNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormAddSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAddSach.Designer.cs">
+      <DependentUpon>FormAddSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAlert.Designer.cs">
+      <DependentUpon>FormAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMessageBox.Designer.cs">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormCart.Designer.cs">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMenuNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMenuNote.Designer.cs">
+      <DependentUpon>FormMenuNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormNote.Designer.cs">
+      <DependentUpon>FormNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormNoteInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormNoteInfo.Designer.cs">
+      <DependentUpon>FormNoteInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQLBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQLBS.Designer.cs">
+      <DependentUpon>FormQLBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQLBSNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQLBSNV.Designer.cs">
+      <DependentUpon>FormQLBSNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQLDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQLDT.Designer.cs">
+      <DependentUpon>FormQLDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQLKH.Designer.cs">
+      <DependentUpon>FormQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQLKHNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQLKHNV.Designer.cs">
+      <DependentUpon>FormQLKHNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQLNV.Designer.cs">
+      <DependentUpon>FormQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQLS.Designer.cs">
+      <DependentUpon>FormQLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormForgotPassword.Designer.cs">
+      <DependentUpon>FormForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormNhapMua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormNhapMua.Designer.cs">
+      <DependentUpon>FormNhapMua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSettingAccountQTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSettingAccountQTV.Designer.cs">
+      <DependentUpon>FormSettingAccountQTV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSettingAccountNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSettingAccountNV.Designer.cs">
+      <DependentUpon>FormSettingAccountNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSuaNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSuaNV.Designer.cs">
+      <DependentUpon>FormSuaNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTheme.Designer.cs">
+      <DependentUpon>FormTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormTTKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTTKH.Designer.cs">
+      <DependentUpon>FormTTKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormTTNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTTNV.Designer.cs">
+      <DependentUpon>FormTTNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormTTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTTS.Designer.cs">
+      <DependentUpon>FormTTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainMenuNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainMenuNV.Designer.cs">
+      <DependentUpon>MainMenuNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainMenuQTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainMenuQTV.Designer.cs">
       <DependentUpon>MainMenuQTV.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuQLBS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuQLBS.Designer.cs">
-      <DependentUpon>MenuQLBS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuQLDT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuQLDT.Designer.cs">
-      <DependentUpon>MenuQLDT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuQLKH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuQLKH.Designer.cs">
-      <DependentUpon>MenuQLKH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuQLNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuQLNV.Designer.cs">
-      <DependentUpon>MenuQLNV.cs</DependentUpon>
-    </Compile>
+    <Compile Include="MenuColorTable.cs" />
+    <Compile Include="MenuRender.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Admin.cs" />
-    <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Dashboard.cs" />
     <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\EnumLanguage.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Language.cs" />
+    <Compile Include="Models\Note.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Publisher.cs" />
+    <Compile Include="MyApplicationContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJDropDownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJMessageBox.cs" />
+    <Compile Include="RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJTextBox.Designer.cs">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="FormHDKH.resx">
-      <DependentUpon>FormHDKH.cs</DependentUpon>
+    <Compile Include="Validator\Validators.cs" />
+    <EmbeddedResource Include="GUI\FormAddKH.resx">
+      <DependentUpon>FormAddKH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTKKH.resx">
-      <DependentUpon>FormTKKH.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\FormAddNV.resx">
+      <DependentUpon>FormAddNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\FormAddSach.resx">
+      <DependentUpon>FormAddSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuQTV.resx">
+    <EmbeddedResource Include="GUI\FormAlert.resx">
+      <DependentUpon>FormAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormAuthenticateCustomer.resx">
+      <DependentUpon>FormAuthenticateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormChiTietHoaDon.resx">
+      <DependentUpon>FormChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHoaDonKhachHang.resx">
+      <DependentUpon>FormHoaDonKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormIdentify.resx">
+      <DependentUpon>FormIdentify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormIntro.resx">
+      <DependentUpon>FormIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLoading.resx">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormCart.resx">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMenuNote.resx">
+      <DependentUpon>FormMenuNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormNote.resx">
+      <DependentUpon>FormNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormNoteInfo.resx">
+      <DependentUpon>FormNoteInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQLBS.resx">
+      <DependentUpon>FormQLBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQLBSNV.resx">
+      <DependentUpon>FormQLBSNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQLDT.resx">
+      <DependentUpon>FormQLDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQLKH.resx">
+      <DependentUpon>FormQLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQLKHNV.resx">
+      <DependentUpon>FormQLKHNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQLNV.resx">
+      <DependentUpon>FormQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQLS.resx">
+      <DependentUpon>FormQLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormForgotPassword.resx">
+      <DependentUpon>FormForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormNhapMua.resx">
+      <DependentUpon>FormNhapMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSettingAccountQTV.resx">
+      <DependentUpon>FormSettingAccountQTV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSettingAccountNV.resx">
+      <DependentUpon>FormSettingAccountNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSuaNV.resx">
+      <DependentUpon>FormSuaNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSuaSach.resx">
+      <DependentUpon>FormSuaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormTheme.resx">
+      <DependentUpon>FormTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormTTKH.resx">
+      <DependentUpon>FormTTKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormTTNV.resx">
+      <DependentUpon>FormTTNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormTTS.resx">
+      <DependentUpon>FormTTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainMenuNV.resx">
+      <DependentUpon>MainMenuNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainMenuQTV.resx">
       <DependentUpon>MainMenuQTV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuQLBS.resx">
-      <DependentUpon>MenuQLBS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuQLDT.resx">
-      <DependentUpon>MenuQLDT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuQLKH.resx">
-      <DependentUpon>MenuQLKH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuQLNV.resx">
-      <DependentUpon>MenuQLNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -187,89 +606,278 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Img\quản lý sách img.jpg" />
+    <Content Include="books11.ico" />
+    <Content Include="Order.txt" />
+    <None Include="Img\Icon\export file.png" />
+    <None Include="Img\Icon\export icon.png" />
+    <None Include="Img\Icon\male employee.png" />
+    <None Include="Img\Icon\pencil_60px.png" />
+    <None Include="Img\Icon\multiply_60px.png" />
+    <None Include="Img\Icon\icons8-shopping-cart-52.png" />
+    <None Include="Img\Icon\icons8-shopping-cart-30.png" />
+    <None Include="Img\Icon\icons8-buying-30.png" />
+    <None Include="Img\Icon\file.png" />
+    <None Include="Img\Icon\bill.png" />
+    <None Include="Img\Icon\warning.png" />
+    <None Include="Img\Icon\success.png" />
+    <None Include="Img\Icon\info.png" />
+    <None Include="Img\Icon\icons8_cancel_45px.png" />
+    <None Include="Img\Icon\error-red.png" />
+    <None Include="Img\GI\aether.png" />
+    <None Include="Img\GI\albedo.png" />
+    <None Include="Img\GI\aloy.png" />
+    <None Include="Img\GI\amber.png" />
+    <None Include="Img\GI\ayaka.png" />
+    <None Include="Img\GI\ayato.png" />
+    <None Include="Img\GI\barbara.png" />
+    <None Include="Img\GI\beidou.png" />
+    <None Include="Img\GI\bennett.png" />
+    <None Include="Img\GI\childe.png" />
+    <None Include="Img\GI\chongyun.png" />
+    <None Include="Img\GI\diluc.png" />
+    <None Include="Img\GI\diona.png" />
+    <None Include="Img\GI\eula.png" />
+    <None Include="Img\GI\fischl.png" />
+    <None Include="Img\GI\ganyu.png" />
+    <None Include="Img\GI\gorou.png" />
+    <None Include="Img\GI\heizou.png" />
+    <None Include="Img\GI\hutao.png" />
+    <None Include="Img\GI\itto.png" />
+    <None Include="Img\GI\jean.png" />
+    <None Include="Img\GI\kaeya.png" />
+    <None Include="Img\GI\kazuha.png" />
+    <None Include="Img\GI\keqing.png" />
+    <None Include="Img\GI\klee.png" />
+    <None Include="Img\GI\kokomi.png" />
+    <None Include="Img\GI\kujou sara.png" />
+    <None Include="Img\GI\kuki shinobu.png" />
+    <None Include="Img\GI\lisa.png" />
+    <None Include="Img\GI\lumine.png" />
+    <None Include="Img\GI\mona.png" />
+    <None Include="Img\GI\ningguang.png" />
+    <None Include="Img\GI\noelle.png" />
+    <None Include="Img\GI\qiqi.png" />
+    <None Include="Img\GI\raiden shogun.png" />
+    <None Include="Img\GI\razor.png" />
+    <None Include="Img\GI\rosaria.png" />
+    <None Include="Img\GI\sayu.png" />
+    <None Include="Img\GI\shenhe.png" />
+    <None Include="Img\GI\sucrose.png" />
+    <None Include="Img\GI\thoma.png" />
+    <None Include="Img\GI\venti.png" />
+    <None Include="Img\GI\xiangling.png" />
+    <None Include="Img\GI\xiao.png" />
+    <None Include="Img\GI\xingqiu.png" />
+    <None Include="Img\GI\xinyan.png" />
+    <None Include="Img\GI\yae miko.png" />
+    <None Include="Img\GI\yanfei.png" />
+    <None Include="Img\GI\yelan.png" />
+    <None Include="Img\GI\yoimiya.png" />
+    <None Include="Img\GI\yunjin.png" />
+    <None Include="Img\GI\zhongli.png" />
+    <None Include="Img\Icon\add book.png" />
+    <None Include="Img\Icon\add.png" />
+    <None Include="Img\Icon\add-NV.png" />
+    <None Include="Img\Icon\add-user.png" />
+    <None Include="Img\Icon\administrator_woman2.png" />
+    <None Include="Img\Icon\administrator-man.png" />
+    <None Include="Img\Icon\affiliate-marketing.png" />
+    <None Include="Img\Icon\api.png" />
+    <None Include="Img\Icon\app icon 1.jpeg" />
+    <None Include="Img\Icon\arrange icon.jpg" />
+    <None Include="Img\Icon\arrange icon2.jpg" />
+    <None Include="Img\Icon\bach khoa.jpg" />
+    <None Include="Img\Icon\book info 2.png" />
+    <None Include="Img\Icon\Book store logo.png" />
+    <None Include="Img\Icon\book2.png" />
+    <None Include="Img\Icon\book3.png" />
+    <None Include="Img\Icon\books.png" />
+    <None Include="Img\Icon\books1.png" />
+    <None Include="Img\Icon\booksote logo.png" />
+    <None Include="Img\Icon\business.png" />
+    <None Include="Img\Icon\buyer.png" />
+    <None Include="Img\Icon\buyer1.png" />
+    <None Include="Img\Icon\chart.png" />
+    <None Include="Img\Icon\chat.png" />
+    <None Include="Img\Icon\cloud.png" />
+    <None Include="Img\Icon\c-sharp.png" />
+    <None Include="Img\Icon\customer information.png" />
+    <None Include="Img\Icon\database.png" />
+    <None Include="Img\Icon\delete_30px.png" />
+    <None Include="Img\Icon\delivery-truck.png" />
+    <None Include="Img\Icon\display icon 2.jpg" />
+    <None Include="Img\Icon\display icon 3.png" />
+    <None Include="Img\Icon\Display icon.png" />
+    <None Include="Img\Icon\division.png" />
+    <None Include="Img\Icon\employee man default.png" />
+    <None Include="Img\Icon\employee women default.png" />
+    <None Include="Img\Icon\employee.png" />
+    <None Include="Img\Icon\error.png" />
+    <None Include="Img\Icon\exclamation.png" />
+    <None Include="Img\Icon\exit icon.jpg" />
+    <None Include="Img\Icon\fairy-tale.png" />
+    <None Include="Img\Icon\female employee.png" />
+    <None Include="Img\Icon\group.png" />
+    <None Include="Img\Icon\hide.png" />
+    <None Include="Img\Icon\human-resources.png" />
+    <None Include="Img\Icon\icons8_add_shopping_cart_30px.png" />
+    <None Include="Img\Icon\icons8_cheap_2_30px.png" />
+    <None Include="Img\Icon\icons8_Close_30px.png" />
+    <None Include="Img\Icon\icons8_create_document_30px.png" />
+    <None Include="Img\Icon\icons8_customer_18px.png" />
+    <None Include="Img\Icon\icons8_do_not_disturb_ios_30px.png" />
+    <None Include="Img\Icon\icons8_drop_shipping_30px.png" />
+    <None Include="Img\Icon\icons8_eye_24px.png" />
+    <None Include="Img\Icon\icons8_hide_24px.png" />
+    <None Include="Img\Icon\icons8_launch_40px.png" />
+    <None Include="Img\Icon\icons8_lock_18px.png" />
+    <None Include="Img\Icon\icons8_Logout_30px.png" />
+    <None Include="Img\Icon\icons8_picture_30px.png" />
+    <None Include="Img\Icon\icons8_reserve_30px_1.png" />
+    <None Include="Img\Icon\icons8_rocket_40px.png" />
+    <None Include="Img\Icon\icons8_rocket_90px.png" />
+    <None Include="Img\Icon\icons8_search_20px.png" />
+    <None Include="Img\Icon\icons8_user_settings_30px.png" />
+    <None Include="Img\Icon\icons8-c-sharp-logo-2-96.png" />
+    <None Include="Img\Icon\icons8-management-64.png" />
+    <None Include="Img\Icon\idea.png" />
+    <None Include="Img\Icon\image_processing20211012-14636-1mam6hy.gif" />
+    <None Include="Img\Icon\information.png" />
+    <None Include="Img\Icon\j3IISku.gif" />
+    <None Include="Img\Icon\java.png" />
+    <None Include="Img\Icon\logo 2.png" />
+    <None Include="Img\Icon\logo book store.png" />
+    <None Include="Img\Icon\logo khoa.jpg" />
+    <None Include="Img\Icon\logo menu.jpg" />
+    <None Include="Img\Icon\Logo Project AM 2.png" />
+    <None Include="Img\Icon\logo.png" />
+    <None Include="Img\Icon\male admin.bmp" />
+    <None Include="Img\Icon\male-customer.png" />
+    <None Include="Img\Icon\man 1.png" />
+    <None Include="Img\Icon\man.png" />
+    <None Include="Img\Icon\Mesa de trabajo 1 copia%404x.png" />
+    <None Include="Img\Icon\money-bag.png" />
+    <None Include="Img\Icon\nano-technology.png" />
+    <None Include="Img\Icon\night-mode.png" />
+    <None Include="Img\Icon\open-book.png" />
+    <None Include="Img\Icon\package.png" />
+    <None Include="Img\Icon\package2.png" />
+    <None Include="Img\Icon\payment.png" />
+    <None Include="Img\Icon\pencil.png" />
+    <None Include="Img\Icon\power icon.jpg" />
+    <None Include="Img\Icon\price-tag.png" />
+    <None Include="Img\Icon\profile.png" />
+    <None Include="Img\Icon\profile2.png" />
+    <None Include="Img\Icon\profit.png" />
+    <None Include="Img\Icon\profits.png" />
+    <None Include="Img\Icon\puddle.png" />
+    <None Include="Img\Icon\question.png" />
+    <None Include="Img\Icon\rain_L.png" />
+    <None Include="Img\Icon\reading.png" />
+    <None Include="Img\Icon\returning.png" />
+    <None Include="Img\Icon\return-on-investment.png" />
+    <None Include="Img\Icon\search.png" />
+    <None Include="Img\Icon\search2.png" />
+    <None Include="Img\Icon\shield.png" />
+    <None Include="Img\Icon\shopping1.png" />
+    <None Include="Img\Icon\shopping-bags.png" />
+    <None Include="Img\Icon\shopping-cart.png" />
+    <None Include="Img\Icon\show icon 3.png" />
+    <None Include="Img\Icon\show icon.png" />
+    <None Include="Img\Icon\show icon2.png" />
+    <None Include="Img\Icon\sql-file.png" />
+    <None Include="Img\Icon\sql-file2.png" />
+    <None Include="Img\Icon\sticky-notes.png" />
+    <None Include="Img\Icon\teamwork.png" />
+    <None Include="Img\Icon\teamwork1.png" />
+    <None Include="Img\Icon\test 1.jpg" />
+    <None Include="Img\Icon\test 1_cleanup_digital_art_x4.jpg" />
+    <None Include="Img\Icon\test 2_digital_art_x4_cleanup.jpg" />
+    <None Include="Img\Icon\test background.jpg" />
+    <None Include="Img\Icon\test2.png" />
+    <None Include="Img\Icon\united-kingdom flag.png" />
+    <None Include="Img\Icon\user icon.jpg" />
+    <None Include="Img\Icon\user info.png" />
+    <None Include="Img\Icon\user+.png" />
+    <None Include="Img\Icon\vietnam flag.png" />
+    <None Include="Img\Icon\view.png" />
+    <None Include="Img\Icon\web-browser.png" />
+    <None Include="Img\Icon\women.png" />
+    <None Include="Img\Icon\writing.png" />
+    <None Include="Img\Book\7thoiquenthanhdat.jpg" />
+    <None Include="Img\Book\cachnghidethanhcong.jpg" />
+    <None Include="Img\Book\cuocsongkhonggioihan.jpg" />
+    <None Include="Img\Book\dac-nhan-tam-biamem2019-76k-bia11.jpg" />
+    <None Include="Img\Book\gdcg-12.jpg" />
+    <None Include="Img\Book\gia tri cua su tu te.png" />
+    <None Include="Img\Book\hanhtrinhvephuongdong.jpg" />
+    <None Include="Img\Book\hatgiongtamhon.jpg" />
+    <None Include="Img\Book\Hinh-hoc-12-346267-2.jpg" />
+    <None Include="Img\Book\khi tai nang khong theo kip giac mo.jpg" />
+    <None Include="Img\Book\nguoigiauconhatthanhbabylon.jpg" />
+    <None Include="Img\Book\OPM tap 1.jpg" />
+    <None Include="Img\Book\OPM tap 2.jpg" />
+    <None Include="Img\Book\OPM tap 3.jpg" />
+    <None Include="Img\Book\OPM tap 4.jpg" />
+    <None Include="Img\Book\OPM tap 5.jpg" />
+    <None Include="Img\Book\OPM tap 6.jpg" />
+    <None Include="Img\Book\OPM tap 7.jpg" />
+    <None Include="Img\Book\OPM tap 8.jpg" />
+    <None Include="Img\Book\OPM tap 9.jpg" />
+    <None Include="Img\Book\OPM tap 10.jpg" />
+    <None Include="Img\Book\OPM tap 11.jpg" />
+    <None Include="Img\Book\OPM tap 12.jpg" />
+    <None Include="Img\Book\OPM tap 13.jpg" />
+    <None Include="Img\Book\OPM tap 14.jpg" />
+    <None Include="Img\Book\OPM tap 15.jpg" />
+    <None Include="Img\Book\OPM tap 16.jpg" />
+    <None Include="Img\Book\OPM tap 17.jpg" />
+    <None Include="Img\Book\OPM tap 18.jpg" />
+    <None Include="Img\Book\OPM tap 19.jpg" />
+    <None Include="Img\Book\OPM tap 20.jpg" />
+    <None Include="Img\Book\OPM tap 21.jpg" />
+    <None Include="Img\Book\OPM tap 22.jpg" />
+    <None Include="Img\Book\OPM tap 23.jpg" />
+    <None Include="Img\Book\OPM tap 24.jpg" />
+    <None Include="Img\Book\OPM tap 25.jpg" />
+    <None Include="Img\Book\sach-giao-khoa-dia-li-lop-12.jpg" />
+    <None Include="Img\Book\sach-giao-khoa-giai-tich-12.jpg" />
+    <None Include="Img\Book\sach-giao-khoa-hoa-hoc-lop-12.jpg" />
+    <None Include="Img\Book\sach-giao-khoa-lich-su-lop-12.jpg" />
+    <None Include="Img\Book\Sach-giao-khoa-ngu-van-12-tap-1-500x554.jpg" />
+    <None Include="Img\Book\Sach-giao-khoa-ngu-van-12-tap-2-500x554.jpg" />
+    <None Include="Img\Book\sach-giao-khoa-sinh-hoc-lop-12.jpg" />
+    <None Include="Img\Book\sach-giao-khoa-tieng-anh-12.jpg" />
+    <None Include="Img\Book\sach-giao-khoa-vat-ly-12.jpg" />
+    <None Include="Img\Book\tieng-anh-thi-diem-12-tap-1.jpg" />
+    <None Include="Img\Book\tieng-anh-thi-diem-12-tap-2.jpg" />
+    <None Include="Img\Book\tocdocuaniemtin.jpg" />
+    <None Include="Img\Book\tuoi-tre-dang-gia-bao-nhieu-min.png" />
+    <None Include="Img\Employee\female employee 1.jpg" />
+    <None Include="Img\Employee\female employee 2.jpg" />
+    <None Include="Img\Employee\female employee 3.png" />
+    <None Include="Img\Employee\male employee 1.jpg" />
+    <None Include="Img\Employee\male employee 2.jpg" />
+    <None Include="Img\Employee\male employee 3.jpg" />
+    <None Include="Img\Employee\male employee 4.jpg" />
+    <None Include="Img\Employee\male employee 5.jpg" />
+    <None Include="Img\Employee\male employee 6.jpg" />
+    <None Include="Img\Employee\male employee 7.jpg" />
+    <None Include="Img\Employee\male employee 8.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Img\customer img.jpg" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\doanh thu img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\tkkh background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\thêm img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\user_remove img.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\list img 1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\tkkh background 4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\search book img.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\arr 2 img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\qlbs background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\Day icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\month icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\quarter icon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\background9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\customer info img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\search customer img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\bill info img.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\qlkh background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\tkkh background 3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\search logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\user name icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\mobile icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\search user.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\bill user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\bill.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Img\employee.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Books-2-icon.ico" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -11,47 +11,45 @@ namespace DoAnPBL3.Models
     [Table("Khach_Hang")]
     public class Customer
     {
-
         public Customer()
         {
             Orders = new HashSet<Order>();
         }
 
+        public Customer(string id_customer, string nameCustomer, string gender, string phone, string address)
+        {
+            ID_Customer = id_customer;
+            FullNameCustomer = nameCustomer;
+            Gender = gender;
+            Phone = phone;
+            Address = address;
+        }
+
         [Key]
         [Column("ID_KhachHang")]
         [StringLength(100)]
-        [Required]
+        [Required(ErrorMessage = "ID khách hàng không được để trống")]
         public string ID_Customer { get; set; }
 
-        [Column("hoVaTen")]
+        [Column("HoVaTen")]
         [StringLength(255)]
-        [Required]
-        public string NameAdmin { get; set; }
+        [Required(ErrorMessage = "Họ và tên khách hàng không được để trống")]
+        public string FullNameCustomer { get; set; }
 
-        [StringLength(255)]
-        [Required]
-        public string Email { get; set; }
-
-        [Column("gioiTinh")]
+        [Column("GioiTinh")]
         [StringLength(20)]
-        [Required]
+        [Required(ErrorMessage = "Giới tính khách hàng không được để trống")]
         public string Gender { get; set; }
 
         [Column("SDT")]
         [StringLength(20)]
-        [Required]
+        [Required(ErrorMessage = "Số điện thoại khách hàng không được để trống")]
         public string Phone { get; set; }
 
-        [Column("diaChi")]
+        [Column("DiaChi")]
         [StringLength(255)]
-        [Required]
+        [Required(ErrorMessage = "Địa chỉ khách hàng không được để trống")]
         public string Address { get; set; }
-
-        [Column("taiKhoanDangNhap")]
-        [StringLength(255)]
-        public string Username { get; set; }
-        [ForeignKey("Username")]
-        public virtual Account Account { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
     }

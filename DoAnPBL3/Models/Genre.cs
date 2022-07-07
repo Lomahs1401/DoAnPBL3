@@ -14,10 +14,15 @@ namespace DoAnPBL3.Models
     [Table("The_Loai")]
     public class Genre
     {
-
         public Genre()
         {
-            Books = new HashSet<Book>();
+
+        }
+
+        public Genre(int id_genre, string nameGenre)
+        {
+            ID_Genre = id_genre;
+            NameGenre = nameGenre;
         }
 
         [Key]
@@ -30,7 +35,5 @@ namespace DoAnPBL3.Models
         [StringLength(255)]
         [Required]
         public string NameGenre { get; set; }
-
-        public virtual ICollection<Book> Books { get; set; }
     }
 }

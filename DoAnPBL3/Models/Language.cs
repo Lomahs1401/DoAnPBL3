@@ -14,10 +14,15 @@ namespace DoAnPBL3.Models
     [Table("Ngon_Ngu")]
     public class Language
     {
-
         public Language()
         {
             Books = new HashSet<Book>();
+        }
+
+        public Language(int id_language, string nameLanguage)
+        {
+            ID_Language = id_language;
+            NameLanguage = nameLanguage;
         }
 
         [Key]

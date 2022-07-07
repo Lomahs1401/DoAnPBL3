@@ -17,53 +17,84 @@ namespace DoAnPBL3.Models
             Orders = new HashSet<Order>();
         }
 
+        public Employee(string id_employee, string nameEmployee, string email, DateTime dateOfBirth, DateTime startDate, 
+            DateTime? endDate, string gender, string phone, string ID_Card, string address, string avatar, string accountUsername, bool workStatus)
+        {
+            ID_Employee = id_employee;
+            FullNameEmployee = nameEmployee;
+            Email = email;
+            DateOfBirth = dateOfBirth;
+            StartDate = startDate;
+            EndDate = endDate;
+            Gender = gender;
+            Phone = phone;
+            Id_Card = ID_Card;
+            Address = address;
+            Avatar = avatar;
+            AccountUsername = accountUsername;
+            WorkStatus = workStatus;
+        }
+
         [Key]
         [Column("ID_NhanVien")]
         [StringLength(100)]
-        [Required]
+        [Required(ErrorMessage = "ID của nhân viên không được để trống")]
         public string ID_Employee { get; set; }
 
-        [Column("hoVaTen")]
+        [Column("HoVaTen")]
         [StringLength(255)]
-        [Required]
-        public string NameEmployee { get; set; }
+        [Required(ErrorMessage = "Họ và tên của nhân viên không được để trống")]
+        public string FullNameEmployee { get; set; }
 
-        [Required]
+        [Column("Email")]
+        [Required(ErrorMessage = "Email của nhân viên không được để trống")]
         public string Email { get; set; }
 
-        [Column("ngaySinh")]
-        [Required]
+        [Column("NgaySinh")]
+        [Required(ErrorMessage = "Ngày sinh của nhân viên không được để trống")]
         public DateTime DateOfBirth { get; set; }
 
-        [Column("gioiTinh")]
+        [Column("NgayVaoLam")]
+        [Required(ErrorMessage = "Ngày bắt đầu làm việc của nhân viên không được để trống")]
+        public DateTime StartDate { get; set; }
+
+        [Column("NgayNghiLam")]
+        public DateTime? EndDate { get; set; }
+
+        [Column("GioiTinh")]
         [StringLength(20)]
-        [Required]
+        [Required(ErrorMessage = "Giới tính của nhân viên không được để trống")]
         public string Gender { get; set; }
 
         [Column("SDT")]
         [StringLength(20)]
-        [Required]
+        [Required(ErrorMessage = "Số điện thoại của nhân viên không được để trống")]
         public string Phone { get; set; }
 
         [Column("CMND")]
         [StringLength(50)]
-        [Required]
+        [Required(ErrorMessage = "CMND của nhân viên không được để trống")]
         public string Id_Card { get; set; }
 
-        [Column("diaChi")]
+        [Column("DiaChi")]
         [StringLength(255)]
-        [Required]
+        [Required(ErrorMessage = "Địa chỉ của nhân viên không được để trống")]
         public string Address { get; set; }
 
-        public byte[] Avatar { get; set; }
+        [Column("Anh")]
+        public string Avatar { get; set; }
 
-        [Column("taiKhoanDangNhap")]
+        [Column("TaiKhoanDangNhap")]
         [StringLength(255)]
-        public string Username { get; set; }
-        [ForeignKey("Username")]
+        public string AccountUsername { get; set; }
+
+        [ForeignKey("AccountUsername")]
         public virtual Account Account { get; set; }
 
-        public virtual ICollection<Order> Orders { get; set; }
+        [Column("TrangThai")]
+        [Required(ErrorMessage = "Tình trạng làm việc của nhân viên không được để trống")]
+        public bool WorkStatus { get; set; }
 
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

@@ -11,32 +11,35 @@ namespace DoAnPBL3.Models
     [Table("Tai_Khoan")]
     public class Account
     {
-
         public Account()
         {
-            AdminAccounts = new HashSet<Admin>();
-            EmployeeAccounts = new HashSet<Employee>();
-            CustomerAccounts = new HashSet<Customer>();
+
+        }
+
+        public Account(string Username, string Password, bool Role, string Avatar)
+        {
+            this.Username = Username;
+            this.Password = Password;
+            this.Role = Role;
+            this.Avatar = Avatar;
         }
 
         [Key]
         [Column("TenDangNhap")]
         [StringLength(255)]
-        [Required]
+        [Required(ErrorMessage = "Tên đăng nhập không được để trống")]
         public string Username { get; set; }
 
-        [Column("matKhau")]
+        [Column("MatKhau")]
         [StringLength(255)]
-        [Required]
+        [Required(ErrorMessage = "Mật khẩu không được để trống")]
         public string Password { get; set; }
 
-        [Column("quyen")]
-        [StringLength(255)]
-        [Required]
-        public string Role { get; set; }
+        [Column("AnhDaiDien")]
+        public string Avatar { get; set; }
 
-        public virtual ICollection<Admin> AdminAccounts { get; set; }
-        public virtual ICollection<Employee> EmployeeAccounts { get; set; }
-        public virtual ICollection<Customer> CustomerAccounts { get; set; }
+        [Column("Quyen")]
+        [Required(ErrorMessage = "Quyền không được để trống")]
+        public bool Role { get; set; }
     }
 }

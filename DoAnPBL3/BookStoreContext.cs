@@ -10,25 +10,34 @@ namespace DoAnPBL3
         public BookStoreContext()
             : base("name=BookStoreContext")
         {
-            Database.SetInitializer<BookStoreContext>(new CreateDatabaseIfNotExists<BookStoreContext>());
+            Configuration.LazyLoadingEnabled = true;
+            Database.SetInitializer<BookStoreContext>(new InitialData());
         }
 
-        public virtual DbSet<Author> Authors { get; set; }
         public virtual DbSet<Genre> Genres { get; set; }
         public virtual DbSet<Language> Languages { get; set; }
         public virtual DbSet<Publisher> Publishers { get; set; }
         public virtual DbSet<Book> Books { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
-        public virtual DbSet<Admin> AdminAccounts { get; set; }
-        public virtual DbSet<Employee> EmployeeAccounts { get; set; }
-        public virtual DbSet<Customer> CustomerAccounts { get; set; }
+        public virtual DbSet<Admin> Admins { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+        public virtual DbSet<Note> Notes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Employee>()
+                .HasIndex(employee => new { employee.Phone, employee.Id_Card })
+                .IsUnique(true);
+            modelBuilder.Entity<Admin>()
+                .HasIndex(admin => new { admin.Phone, admin.ID_Card })
+                .IsUnique(true);
+            modelBuilder.Entity<Customer>()
+                .HasIndex(customer => customer.Phone)
+                .IsUnique();
             base.OnModelCreating(modelBuilder);
         }
-
     }
 }
